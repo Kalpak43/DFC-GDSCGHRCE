@@ -8,7 +8,9 @@ import { DarkModeProvider } from "./contexts/DarkMode";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-    <App />
+      <DarkModeProvider>
+        <App />
+      </DarkModeProvider>
     </BrowserRouter>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);

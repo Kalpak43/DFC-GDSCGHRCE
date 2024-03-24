@@ -1,13 +1,12 @@
 import React, { useContext } from "react";
 import { IoMdMoon } from "react-icons/io";
 import { MdSunny } from "react-icons/md";
-import { RiMoonLine } from "react-icons/ri";
 import { DarkModeContext } from "../../contexts/DarkMode";
 
 export default function ThemeToggler() {
 
 
-  const {theme, toggleTheme} = useContext(DarkModeContext);
+  const {theme, toggleTheme} = useContext(DarkModeContext)
 
   return (
     <div className="theme-toggler">
