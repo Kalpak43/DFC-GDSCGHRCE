@@ -4,7 +4,10 @@ import HomePage from "./pages/HomePage";
 import Layout from "./Layout";
 import ErrorPage from "./pages/ErrorPage";
 
+
 function App() {
+
+
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
