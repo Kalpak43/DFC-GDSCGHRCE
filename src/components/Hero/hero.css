@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Samarkan";
+    src: url(../../assets/fonts/Samarkan/SAMAN___.woff2) format("woff2"),
+        format("woff2");
+    font-weight: 400;
+  }
+
+.hero h1 {
+    font-family: Samarkan, sans-serif;
+}

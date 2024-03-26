@@ -38,3 +38,12 @@ body {
   background-color: var(--google-green);
   color: var(--bg-clr);
 }
+ 
+.layout > .container {
+  position: relative;
+  background-color: #e3e3e37e;
+  backdrop-filter: blur(10px);
+  border-radius: 0.5rem;
+  transition: all 0.1s ease-in-out;
+  padding: 1rem 1rem;
+}
