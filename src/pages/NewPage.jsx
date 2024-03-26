@@ -7,6 +7,7 @@ import Giveaways from "../components/Giveaways";
 import Sponsors from "../components/Sponsors";
 import CommunityPartners from "../components/CommunityPartners";
 import SocialMedia from "../components/SocialMedia";
+import Schedule from "../components/schedule/schedule";
 
 export default function NewPage() {
   const layouts = {
@@ -62,7 +63,7 @@ export default function NewPage() {
         </div>
         <div key="b" className="container">
           <div className="dragHandle absolute left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
-          Schedule
+          <Schedule/>
         </div>
         <div key="c" className="container">
           <div className="dragHandle absolute left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
