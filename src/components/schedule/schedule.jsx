@@ -56,7 +56,12 @@ export default function Schedule() {
 
   return (
     <div>
-      <button onClick={handleOpen}>click me modal ready!</button>
+
+      {/* <button className="block h-full w-full" onClick={handleOpen}>click me!</button> */}
+      <Box onClick={handleOpen} sx={{display:'block',width:'100%',height:'100%'}}>
+hi
+      </Box>
+   
       <Modal
         open={open}
         onClose={handleClose}
