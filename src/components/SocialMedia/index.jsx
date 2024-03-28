@@ -20,10 +20,10 @@ export default function SocialMedia() {
         <a href="https://www.linkedin.com/company/gdsc-ghrce/" className="block p-2 border-2 w-fit rounded-full text-3xl md:text-4xl bg-[#0077B5]">
           <FaLinkedin />
         </a>
-        <a href="https://www.facebook.com" className="block p-2 border-2 w-fit rounded-full text-3xl md:text-4xl bg-[#E10600]">
+        <a href="https://www.youtube.com/@gdscghrce5152" className="block p-2 border-2 w-fit rounded-full text-3xl md:text-4xl bg-[#E10600]">
           <FaYoutube size={32} />
         </a>
-        <a href="https://www.facebook.com" className="block p-2 border-2 w-fit rounded-full text-3xl md:text-4xl bg-[#5865F2]">
+        <a href="https://discord.com/invite/q5yUfBFkSV" className="block p-2 border-2 w-fit rounded-full text-3xl md:text-4xl bg-[#5865F2]">
           <FaDiscord size={32} />
         </a>
         <ThemeToggler />
