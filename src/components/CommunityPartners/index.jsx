@@ -1,7 +1,15 @@
-import React from 'react'
+import React from "react";
 
 export default function CommunityPartners() {
   return (
-    <div className="hero w-full h-full flex flex-col items-center justify-center">CommunityPartners</div>
-  )
+    <div className="hero w-full h-full flex flex-col items-center justify-center text-center">
+      <h1 className="text-4xl font-bold bg-gradient-to-r from-[var(--google-red)] to-[var(--google-blue)] inline-block text-transparent bg-clip-text">
+        Community Partners
+      </h1>
+      <br />
+      <p className="bg-gradient-to-r from-[var(--google-yellow)] to-[var(--google-green)] inline-block text-transparent bg-clip-text">
+        Revealing Soon...
+      </p>
+    </div>
+  );
 }

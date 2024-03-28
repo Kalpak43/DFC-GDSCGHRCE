@@ -8,6 +8,7 @@ import Sponsors from "../components/Sponsors";
 import CommunityPartners from "../components/CommunityPartners";
 import SocialMedia from "../components/SocialMedia";
 import Schedule from "../components/schedule/schedule";
+import Background from "../components/Background/Background";
 
 export default function NewPage() {
   const layouts = {
@@ -27,11 +28,11 @@ export default function NewPage() {
       { i: "b", x: 1, y: 1, w: 1, h: 3 },
       { i: "c", x: 0, y: 0, w: 2, h: 6 },
       { i: "d", x: 0, y: 4, w: 2, h: 4 },
-      { i: "f", x: 0, y: 5, w: 2, h: 6 },
-      { i: "g", x: 0, y: 6, w: 2, h: 7 },
+      { i: "f", x: 0, y: 0, w: 2, h: 6 },
+      { i: "g", x: 0, y: 2, w: 2, h: 7 },
       { i: "h", x: 0, y: 7, w: 2, h: 5 },
       { i: "i", x: 0, y: 8, w: 2, h: 5 },
-      { i: "j", x: 0, y: 9, w: 2, h: 3 },
+      { i: "j", x: 0, y: 9, w: 2, h: 4 },
     ],
   };
 
@@ -46,7 +47,8 @@ export default function NewPage() {
   const ResponsiveGridLayout = WidthProvider(Responsive);
 
   return (
-    <div className="lg:h-screen px-4 lg:px-4" ref={layoutRef}>
+    <div className="lg:h-screen px-0 lg:px-4" ref={layoutRef}>
+      <Background />
       <ResponsiveGridLayout
         className="layout my-auto"
         layouts={layouts}
@@ -57,40 +59,48 @@ export default function NewPage() {
         compactType="vertical"
         draggableHandle=".dragHandle"
       >
-        <div key="a" className="container">
-          <div className="dragHandle absolute left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
+        <div key="a" className="container order-1 lg:order-auto">
+          <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
           <Timer />
         </div>
         <div key="b" className="container">
-          <div className="dragHandle absolute left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
-          <Schedule/>
+          <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
+          <Schedule />
         </div>
         <div key="c" className="container">
-          <div className="dragHandle absolute left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
+          <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
           <Hero />
         </div>
         <div key="d" className="container">
-        <div className="dragHandle absolute left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
-          Venue
+          <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
+          <div className="hero w-full h-full flex flex-col items-center justify-center">
+            <h1 className="text-4xl font-bold bg-gradient-to-r from-[var(--google-red)] to-[var(--google-blue)] inline-block text-transparent bg-clip-text">
+              Venue
+            </h1>
+            <br />
+            <p className="bg-gradient-to-r from-[var(--google-yellow)] to-[var(--google-green)] inline-block text-transparent bg-clip-text">
+              Revealing Soon...
+            </p>
+          </div>
         </div>
         <div key="f" className="container">
-        <div className="dragHandle absolute left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
+          <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
           <Giveaways />
         </div>
         <div key="g" className="container">
-        <div className="dragHandle absolute left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
+          <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
           <Speakers />
         </div>
         <div key="h" className="container">
-        <div className="dragHandle absolute left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
+          <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
           <Sponsors />
         </div>
         <div key="i" className="container">
-        <div className="dragHandle absolute left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
+          <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
           <CommunityPartners />
         </div>
         <div key="j" className="container">
-        <div className="dragHandle absolute left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
+          <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
           <SocialMedia />
         </div>
       </ResponsiveGridLayout>

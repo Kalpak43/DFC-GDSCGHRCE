@@ -9,8 +9,8 @@ import Paper from "@mui/material/Paper";
 
 const style = {
   position: "absolute",
-//   opacity: "0.7",
-backgroundColor:'#141414',
+  //   opacity: "0.7",
+  backgroundColor: "#141414",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
@@ -54,8 +54,14 @@ export default function Schedule() {
   const handleClose = () => setOpen(false);
 
   return (
-    <div>
-     <button onClick={handleOpen}  >click me modal ready!</button>
+    <div className="w-full h-full flex flex-col items-center justify-center">
+      {/* <button onClick={handleOpen}  >click me modal ready!</button> */}
+      <h1 className="text-4xl font-bold bg-gradient-to-r from-[var(--google-red)] to-[var(--google-blue)] inline-block text-transparent bg-clip-text">
+        Schedule
+      </h1>
+      <p className="bg-gradient-to-r from-[var(--google-yellow)] to-[var(--google-green)] inline-block text-transparent bg-clip-text">
+        Revealing Soon...
+      </p>
       <Modal
         open={open}
         onClose={handleClose}
@@ -64,7 +70,11 @@ export default function Schedule() {
       >
         <Box sx={style} lg={largeStyle}>
           <dir>
-            <h1 style={{fontSize:'30px',textAlign:'center',padding:'5px'}}>Schedule</h1>
+            <h1
+              style={{ fontSize: "30px", textAlign: "center", padding: "5px" }}
+            >
+              Schedule
+            </h1>
             <Grid container spacing={2}>
               <Grid style={{ opacity: "1" }} item xs={2}>
                 <Item
@@ -74,7 +84,6 @@ export default function Schedule() {
                     fontWeight: "normal",
                     height: "80px",
 
-                    
                     textAlign: "center",
                   }}
                 >
@@ -82,7 +91,8 @@ export default function Schedule() {
                 </Item>
               </Grid>
               <Grid style={{ height: "80px" }} item xs={5}>
-                <Item style={{
+                <Item
+                  style={{
                     color: "white ",
                     backgroundColor: "rgb(40, 41, 43)",
                     fontWeight: "normal",
@@ -90,7 +100,10 @@ export default function Schedule() {
 
                     borderLeft: "5px solid rgb(219, 68, 55)",
                     textAlign: "center",
-                  }}>xs=4</Item>
+                  }}
+                >
+                  xs=4
+                </Item>
               </Grid>
               <Grid item style={{ textAlign: "center" }} xs={5}>
                 <Item
@@ -98,7 +111,7 @@ export default function Schedule() {
                     borderLeft: "5px solid rgb(15, 157, 86)",
                     backgroundColor: "rgb(29, 58, 46)",
                     color: "white ",
-                        
+
                     fontWeight: "normal",
                     height: "80px",
                     textAlign: "start",
@@ -115,7 +128,6 @@ export default function Schedule() {
                     fontWeight: "normal",
                     height: "80px",
 
-                    
                     textAlign: "center",
                   }}
                 >
@@ -128,17 +140,15 @@ export default function Schedule() {
                     borderLeft: "5px solid rgb(15, 157, 86)",
                     backgroundColor: "rgb(40, 41, 43)",
                     color: "white ",
-                        
+
                     fontWeight: "normal",
                     height: "80px",
                     textAlign: "start",
                   }}
                 >
-               Free popcorn and movie
+                  Free popcorn and movie
                 </Item>
               </Grid>
-
-
 
               <Grid style={{ opacity: "1" }} item xs={2}>
                 <Item
@@ -148,7 +158,6 @@ export default function Schedule() {
                     fontWeight: "normal",
                     height: "80px",
 
-                    
                     textAlign: "center",
                   }}
                 >
@@ -161,13 +170,13 @@ export default function Schedule() {
                     borderLeft: "5px solid rgb(66, 133, 244)",
                     backgroundColor: "rgb(40, 41, 43)",
                     color: "white ",
-                        
+
                     fontWeight: "normal",
                     height: "80px",
                     textAlign: "start",
                   }}
                 >
-                 Timepass video games
+                  Timepass video games
                 </Item>
               </Grid>
 
@@ -179,7 +188,6 @@ export default function Schedule() {
                     fontWeight: "normal",
                     height: "80px",
 
-                    
                     textAlign: "center",
                   }}
                 >
@@ -192,26 +200,34 @@ export default function Schedule() {
                     borderLeft: "5px solid rgb(244, 180, 0)",
                     backgroundColor: "rgb(40, 41, 43)",
                     color: "white ",
-                        
+
                     fontWeight: "normal",
                     height: "80px",
                     textAlign: "start",
                   }}
                 >
-                    <div style={{display:'flex',flexDirection:'row',gap:'7px'}}>
-                        <div style={{borderRadius:'50%',height:'50px',width:'50px',backgroundImage:`url(https://m.economictimes.com/thumb/msid-97021979,width-1200,height-900,resizemode-4,imgsize-46928/modi-new-pti1.jpg)`,backgroundRepeat: 'no-repeat',backgroundSize: 'cover' }}>
-
-                        </div>
-                        <div>
-                            <div>
-                            Narendra ModiJi
-                            </div>
-                            <div>
-                                chief minister of Lokmanya nagar
-                            </div>
-                        </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      gap: "7px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        borderRadius: "50%",
+                        height: "50px",
+                        width: "50px",
+                        backgroundImage: `url(https://m.economictimes.com/thumb/msid-97021979,width-1200,height-900,resizemode-4,imgsize-46928/modi-new-pti1.jpg)`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                      }}
+                    ></div>
+                    <div>
+                      <div>Narendra ModiJi</div>
+                      <div>chief minister of Lokmanya nagar</div>
                     </div>
-                 
+                  </div>
                 </Item>
               </Grid>
               <Grid style={{ opacity: "1" }} item xs={2}>
@@ -222,7 +238,6 @@ export default function Schedule() {
                     fontWeight: "normal",
                     height: "80px",
 
-                    
                     textAlign: "center",
                   }}
                 >
@@ -235,31 +250,36 @@ export default function Schedule() {
                     borderLeft: "5px solid rgb(244, 180, 0)",
                     backgroundColor: "rgb(40, 41, 43)",
                     color: "white ",
-                        
+
                     fontWeight: "normal",
                     height: "80px",
                     textAlign: "start",
                   }}
                 >
-                    <div style={{display:'flex',flexDirection:'row',gap:'7px'}}>
-                        <div style={{borderRadius:'50%',height:'50px',width:'50px',backgroundImage:`url(https://m.media-amazon.com/images/M/MV5BMmM3MWU1NWQtMDc5ZC00YzgzLTljZGItOTVkMDJlNzkxY2MxXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_FMjpg_UX1000_.jpg)`,backgroundRepeat: 'no-repeat',backgroundSize: 'cover' }}>
-
-                        </div>
-                        <div>
-                            <div>
-                            Rahul gandhi
-                            </div>
-                            <div>
-                                Meme ministry of india
-                            </div>
-                        </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      gap: "7px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        borderRadius: "50%",
+                        height: "50px",
+                        width: "50px",
+                        backgroundImage: `url(https://m.media-amazon.com/images/M/MV5BMmM3MWU1NWQtMDc5ZC00YzgzLTljZGItOTVkMDJlNzkxY2MxXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_FMjpg_UX1000_.jpg)`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                      }}
+                    ></div>
+                    <div>
+                      <div>Rahul gandhi</div>
+                      <div>Meme ministry of india</div>
                     </div>
-                 
+                  </div>
                 </Item>
               </Grid>
-            
-
-
             </Grid>
           </dir>
         </Box>

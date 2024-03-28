@@ -4,15 +4,15 @@ import { MdSunny } from "react-icons/md";
 import { DarkModeContext } from "../../contexts/DarkMode";
 
 export default function ThemeToggler() {
-
-
-  const {theme, toggleTheme} = useContext(DarkModeContext)
+  const { theme, toggleTheme } = useContext(DarkModeContext);
 
   return (
-    <div className="theme-toggler">
-      <button onClick={toggleTheme} className="absolute bottom-0 right-0 m-4 p-2 bg-[#8ab4f8] rounded-lg text-2xl text-white" title="Theme Toggler">
-        {theme === "light" ? <IoMdMoon /> : <MdSunny />}
-      </button>
-    </div>
+    <button
+      onClick={toggleTheme}
+      className="block p-2 border-2 w-fit rounded-full text-3xl md:text-4xl bg-[#121212]"
+      title="Theme Toggler"
+    >
+      {theme === "light" ? <IoMdMoon /> : <MdSunny />}
+    </button>
   );
 }
