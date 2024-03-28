@@ -79,7 +79,7 @@ export default function Hero() {
         className="px-4 py-4 md:px-16 md:py-6"
       >
         <Box className="h-full w-full">
-          <div className="relative w-full h-full bg-[var(--bg-clr)] rounded-xl shadow shadow-[var(--google-blue)] flex flex-col justify-center gap-y-8 lg:px-20 gap-4 place-items-center overflow-y-scroll p-4">
+          <div className="relative w-full h-full bg-[var(--bg-clr)] rounded-xl shadow shadow-[var(--google-blue)] flex flex-col md:justify-center gap-y-8 lg:px-20 gap-4 place-items-center overflow-y-scroll p-4">
             <button
               className="absolute top-0 right-0 text-2xl m-2"
               onClick={handleClose}
