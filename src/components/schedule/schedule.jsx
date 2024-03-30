@@ -9,7 +9,7 @@ import Modal from "@mui/material/Modal";
 import closeButton from '../../assets/icon.png'
 const style = {
   position: "absolute",
-  //   opacity: "0.7",
+  
   backgroundColor: "#141414",
   top: "50%",
   left: "50%",
@@ -17,10 +17,10 @@ const style = {
   transform: "translate(-50%, -50%)",
   width: "80%",
   height: "85%",
-  borderLeft: "5px solid red",
+  
   borderRadius: "2%",
   overflowY:'auto ',
-  border: "1px solid #000",
+  border: "1px solid black",
   boxShadow: 24,
   p: 4,
 };
@@ -57,10 +57,7 @@ export default function Schedule() {
   return (
     <div>
 
-      {/* <button className="block h-full w-full" onClick={handleOpen}>click me!</button> */}
-      <Box onClick={handleOpen} sx={{display:'block',width:'100%',height:'100%'}}>
-hi
-      </Box>
+      <div onClick={handleOpen}> click me</div>
    
       <Modal
         open={open}
