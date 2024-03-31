@@ -8,7 +8,10 @@ import Sponsors from "../components/Sponsors";
 import CommunityPartners from "../components/CommunityPartners";
 import SocialMedia from "../components/SocialMedia";
 import Schedule from "../components/schedule/schedule";
+
+import Venue from "../components/venue";
 import Background from "../components/Background/Background";
+
 
 export default function NewPage() {
   const layouts = {
@@ -71,6 +74,11 @@ export default function NewPage() {
           <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
           <Hero />
         </div>
+
+        <div style={{padding:"0px"}} key="d" className="container">
+        <div className="dragHandle absolute left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
+        <Venue/>
+        </div>
         <div key="d" className="select-none container">
           <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
           <div className="hero w-full h-full flex flex-col items-center justify-center">
@@ -104,6 +112,8 @@ export default function NewPage() {
           <SocialMedia />
         </div>
       </ResponsiveGridLayout>
+      
     </div>
+
   );
 }
