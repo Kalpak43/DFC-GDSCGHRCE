@@ -59,7 +59,7 @@ export default function Schedule() {
       <h1 className="text-4xl font-bold bg-gradient-to-r from-[var(--google-red)] to-[var(--google-blue)] inline-block text-transparent bg-clip-text">
         Schedule
       </h1>
-      <p className="bg-gradient-to-r from-[var(--google-yellow)] to-[var(--google-green)] inline-block text-transparent bg-clip-text">
+      <p className="">
         Revealing Soon...
       </p>
       <Modal

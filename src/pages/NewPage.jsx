@@ -78,7 +78,7 @@ export default function NewPage() {
               Venue
             </h1>
             <br />
-            <p className="bg-gradient-to-r from-[var(--google-yellow)] to-[var(--google-green)] inline-block text-transparent bg-clip-text">
+            <p className="">
               Revealing Soon...
             </p>
           </div>
@@ -95,7 +95,7 @@ export default function NewPage() {
           <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
           <Sponsors />
         </div>
-        <div key="i" className="select-none container">
+        <div key="i" className="select-none container" id="i">
           <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
           <CommunityPartners />
         </div>

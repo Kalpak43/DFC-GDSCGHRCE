@@ -9,7 +9,7 @@ export default function Speakers() {
         Speakers
       </h1>
       <br />
-      <p className="bg-gradient-to-r from-[var(--google-yellow)] to-[var(--google-green)] inline-block text-transparent bg-clip-text">
+      <p className="">
         Revealing Soon...
       </p>
     </div>
