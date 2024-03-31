@@ -1,27 +1,30 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
+// import Button from "@mui/material/Button";
+// import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
-import Grid from "@mui/material/Grid";
-import { styled } from "@mui/material/styles";
-import Paper from "@mui/material/Paper";
-
+// import Grid from "@mui/material/Grid";
+// import { styled } from "@mui/material/styles";
+// import Paper from "@mui/material/Paper";
+import closeButton from "../../assets/icon.png";
+import { GiCancel } from "react-icons/gi";
 const style = {
   position: "absolute",
-  //   opacity: "0.7",
-  backgroundColor: "#141414",
+
+  backgroundColor: "var(--bg-clr)",
   top: "50%",
   left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: "80%",
-  height: "85%",
-  borderLeft: "5px solid red",
-  borderRadius: "2%",
 
-  border: "1px solid #000",
+  transform: "translate(-50%, -50%)",
+  width: "90%",
+  height: "95%",
+
+  borderRadius: "2%",
+  overflowY: "auto ",
+  // border: "1px solid black",
   boxShadow: 24,
-  p: 4,
+  // padding right = 1
+  paddingRight: 1,
 };
 
 const largeStyle = {
@@ -34,19 +37,18 @@ const largeStyle = {
   height: "85%",
   borderLeft: "5px solid red",
   borderRadius: "5px",
-  bgcolor: "black",
   border: "2px solid #000",
   boxShadow: 24,
   p: 4,
 };
 
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: "center",
-  color: theme.palette.text.secondary,
-}));
+// const Item = styled(Paper)(({ theme }) => ({
+//   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+//   ...theme.typography.body2,
+//   padding: theme.spacing(1),
+//   textAlign: "center",
+//   color: theme.palette.text.secondary,
+// }));
 
 export default function Schedule() {
   const [open, setOpen] = React.useState(false);
@@ -55,13 +57,19 @@ export default function Schedule() {
 
   return (
     <div className="w-full h-full flex flex-col items-center justify-center">
-      {/* <button onClick={handleOpen}  >click me modal ready!</button> */}
-      <h1 className="text-4xl font-bold bg-gradient-to-r from-[var(--google-red)] to-[var(--google-blue)] inline-block text-transparent bg-clip-text">
+      <button
+        className="group h-full w-full text-4xl font-bold bg-gradient-to-r from-[var(--google-red)] to-[var(--google-blue)] inline-block text-transparent bg-clip-text hover:bg-transparent"
+        onClick={handleOpen}
+      >
+        Schedule
+        <span className="hidden group-hover:inline">{" >"}</span>
+      </button>
+      {/* <h1 className="text-4xl font-bold bg-gradient-to-r from-[var(--google-red)] to-[var(--google-blue)] inline-block text-transparent bg-clip-text">
         Schedule
       </h1>
       <p className="">
         Revealing Soon...
-      </p>
+      </p> */}
       <Modal
         open={open}
         onClose={handleClose}
@@ -69,218 +77,199 @@ export default function Schedule() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style} lg={largeStyle}>
-          <dir>
+          <dir className="relative">
+            <button
+              className="absolute top-0 right-0 text-2xl m-2"
+              onClick={handleClose}
+            >
+              <GiCancel />
+            </button>
             <h1
               style={{ fontSize: "30px", textAlign: "center", padding: "5px" }}
             >
               Schedule
             </h1>
-            <Grid container spacing={2}>
-              <Grid style={{ opacity: "1" }} item xs={2}>
-                <Item
-                  style={{
-                    color: "white ",
-                    backgroundColor: "rgb(40, 41, 43)",
-                    fontWeight: "normal",
-                    height: "80px",
 
-                    textAlign: "center",
-                  }}
-                >
-                  9:00am - 10:00am
-                </Item>
-              </Grid>
-              <Grid style={{ height: "80px" }} item xs={5}>
-                <Item
-                  style={{
-                    color: "white ",
-                    backgroundColor: "rgb(40, 41, 43)",
-                    fontWeight: "normal",
-                    height: "80px",
+            <div className="w-12/12 md:w-7/12 lg:6/12 mx-auto relative ">
+              <div className="border-l-2 border-[var(--font-clr)] mt-10">
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#EA4335] border-2 border-[#EA4335] bg-opacity-40 rounded md:rounded-full mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-[#4285F4] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
-                    borderLeft: "5px solid rgb(219, 68, 55)",
-                    textAlign: "center",
-                  }}
-                >
-                  xs=4
-                </Item>
-              </Grid>
-              <Grid item style={{ textAlign: "center" }} xs={5}>
-                <Item
-                  style={{
-                    borderLeft: "5px solid rgb(15, 157, 86)",
-                    backgroundColor: "rgb(29, 58, 46)",
-                    color: "white ",
+                  <div className="w-10 h-1 bg-[#4285F4] absolute -left-10 z-0"></div>
 
-                    fontWeight: "normal",
-                    height: "80px",
-                    textAlign: "start",
-                  }}
-                >
-                  Breakfast ☕
-                </Item>
-              </Grid>
-              <Grid style={{ opacity: "1" }} item xs={2}>
-                <Item
-                  style={{
-                    color: "white ",
-                    backgroundColor: "rgb(40, 41, 43)",
-                    fontWeight: "normal",
-                    height: "80px",
-
-                    textAlign: "center",
-                  }}
-                >
-                  9:00am - 10:00am
-                </Item>
-              </Grid>
-              <Grid item style={{ textAlign: "center" }} xs={10}>
-                <Item
-                  style={{
-                    borderLeft: "5px solid rgb(15, 157, 86)",
-                    backgroundColor: "rgb(40, 41, 43)",
-                    color: "white ",
-
-                    fontWeight: "normal",
-                    height: "80px",
-                    textAlign: "start",
-                  }}
-                >
-                  Free popcorn and movie
-                </Item>
-              </Grid>
-
-              <Grid style={{ opacity: "1" }} item xs={2}>
-                <Item
-                  style={{
-                    color: "white ",
-                    backgroundColor: "rgb(40, 41, 43)",
-                    fontWeight: "normal",
-                    height: "80px",
-
-                    textAlign: "center",
-                  }}
-                >
-                  9:00am - 10:00am
-                </Item>
-              </Grid>
-              <Grid item style={{ textAlign: "center" }} xs={10}>
-                <Item
-                  style={{
-                    borderLeft: "5px solid rgb(66, 133, 244)",
-                    backgroundColor: "rgb(40, 41, 43)",
-                    color: "white ",
-
-                    fontWeight: "normal",
-                    height: "80px",
-                    textAlign: "start",
-                  }}
-                >
-                  Timepass video games
-                </Item>
-              </Grid>
-
-              <Grid style={{ opacity: "1" }} item xs={2}>
-                <Item
-                  style={{
-                    color: "white ",
-                    backgroundColor: "rgb(40, 41, 43)",
-                    fontWeight: "normal",
-                    height: "80px",
-
-                    textAlign: "center",
-                  }}
-                >
-                  9:00am - 10:00am
-                </Item>
-              </Grid>
-              <Grid item style={{ textAlign: "center" }} xs={10}>
-                <Item
-                  style={{
-                    borderLeft: "5px solid rgb(244, 180, 0)",
-                    backgroundColor: "rgb(40, 41, 43)",
-                    color: "white ",
-
-                    fontWeight: "normal",
-                    height: "80px",
-                    textAlign: "start",
-                  }}
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "row",
-                      gap: "7px",
-                    }}
-                  >
-                    <div
-                      style={{
-                        borderRadius: "50%",
-                        height: "50px",
-                        width: "50px",
-                        backgroundImage: `url(https://m.economictimes.com/thumb/msid-97021979,width-1200,height-900,resizemode-4,imgsize-46928/modi-new-pti1.jpg)`,
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                      }}
-                    ></div>
-                    <div>
-                      <div>Narendra ModiJi</div>
-                      <div>chief minister of Lokmanya nagar</div>
-                    </div>
+                  <div className="flex-auto">
+                    <h1 className="text-lg">09:30 a.m. – 10:30 a.m</h1>
+                    <h1 className="text-xl font-bold">
+                      Registration and Kickoff
+                    </h1>
                   </div>
-                </Item>
-              </Grid>
-              <Grid style={{ opacity: "1" }} item xs={2}>
-                <Item
-                  style={{
-                    color: "white ",
-                    backgroundColor: "rgb(40, 41, 43)",
-                    fontWeight: "normal",
-                    height: "80px",
+                </div>
 
-                    textAlign: "center",
-                  }}
-                >
-                  9:00am - 10:00am
-                </Item>
-              </Grid>
-              <Grid item style={{ textAlign: "center" }} xs={10}>
-                <Item
-                  style={{
-                    borderLeft: "5px solid rgb(244, 180, 0)",
-                    backgroundColor: "rgb(40, 41, 43)",
-                    color: "white ",
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#4285F4] border-2 border-[#4285F4] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-[#EA4335] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
-                    fontWeight: "normal",
-                    height: "80px",
-                    textAlign: "start",
-                  }}
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "row",
-                      gap: "7px",
-                    }}
-                  >
-                    <div
-                      style={{
-                        borderRadius: "50%",
-                        height: "50px",
-                        width: "50px",
-                        backgroundImage: `url(https://m.media-amazon.com/images/M/MV5BMmM3MWU1NWQtMDc5ZC00YzgzLTljZGItOTVkMDJlNzkxY2MxXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_FMjpg_UX1000_.jpg)`,
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                      }}
-                    ></div>
-                    <div>
-                      <div>Rahul gandhi</div>
-                      <div>Meme ministry of india</div>
-                    </div>
+                  <div className="w-10 h-1 bg-[#EA4335] absolute -left-10 z-0"></div>
+
+                  <div className="flex-auto">
+                    <h1 className="text-lg">10:30 a.m. – 10:40 a.m</h1>
+                    <h1 className="text-xl font-bold">Inauguration</h1>
                   </div>
-                </Item>
-              </Grid>
-            </Grid>
+                  <div></div>
+                </div>
+
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#FBBC05] border-2 border-[#FBBC05] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-[#FBBC05] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+
+                  <div className="w-10 h-1 bg-[#FBBC05] absolute -left-10 z-0"></div>
+
+                  <div className="flex-auto">
+                    <h1 className="text-lg">10:40 a.m. – 11:00 a.m</h1>
+                    <h1 className="text-xl font-bold">
+                      Guest Welcome / Lightning of Lamp
+                    </h1>
+                  </div>
+                  <div></div>
+                </div>
+
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#2ECC71] border-2 border-[#2ECC71] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-[#2ECC71] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+
+                  <div className="w-10 h-1 bg-[#2ECC71] absolute -left-10 z-0"></div>
+
+                  <div className="flex-auto">
+                    <h1 className="text-lg">11:00 a.m. – 11:30 a.m</h1>
+                    <h1 className="text-xl font-bold">Keynote</h1>
+                  </div>
+                  <div></div>
+                </div>
+
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#EA4335] border-2 border-[#EA4335] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-[#EA4335] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+
+                  <div className="w-10 h-1 bg-[#EA4335] absolute -left-10 z-0"></div>
+
+                  <div className="flex-auto">
+                    <h1 className="text-lg">11:30 a.m. – 12:00 p.m</h1>
+                    <h1 className="text-xl font-bold">Speaker Session 1</h1>
+                  </div>
+                  <div></div>
+                </div>
+
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4  bg-[#4285F4] border-2 border-[#4285F4] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-[#4285F4] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+
+                  <div className="w-10 h-1 bg-[#4285F4] absolute -left-10 z-0"></div>
+
+                  <div className="flex-auto">
+                    <h1 className="text-lg">12:00 p.m. – 12:30 p.m</h1>
+                    <h1 className="text-xl font-bold">Speaker Session 2</h1>
+                  </div>
+                  <div></div>
+                </div>
+
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4  bg-[#FBBC05] border-2 border-[#FBBC05] bg-opacity-40 border-2 border-[#FBBC05] bg-opacity-4 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-[#FBBC05] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+
+                  <div className="w-10 h-1 bg-[#FBBC05] absolute -left-10 z-0"></div>
+
+                  <div className="flex-auto">
+                    <h1 className="text-lg">12:30 p.m. – 1:15 p.m</h1>
+                    <h1 className="text-xl font-bold">Panel Discussion 1</h1>
+                  </div>
+                  <div></div>
+                </div>
+
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4  bg-[#2ECC71] border-2 border-[#2ECC71] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-[#2ECC71] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+
+                  <div className="w-10 h-1 bg-[#2ECC71] absolute -left-10 z-0"></div>
+
+                  <div className="flex-auto">
+                    <h1 className="text-lg">01:15 p.m. – 02:00 p.m</h1>
+                    <h1 className="text-xl font-bold">Networking Lunch</h1>
+                  </div>
+                  <div></div>
+                </div>
+
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#EA4335] border-2 border-[#EA4335] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-[#EA4335] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+
+                  <div className="w-10 h-1 bg-[#EA4335] absolute -left-10 z-0"></div>
+
+                  <div className="flex-auto">
+                    <h1 className="text-lg">02:00 p.m. – 02:30 p.m</h1>
+                    <h1 className="text-xl font-bold">
+                      Technical Treasure Hunt
+                    </h1>
+                  </div>
+                  <div></div>
+                </div>
+
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#4285F4] border-2 border-[#4285F4] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-[#4285F4] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+
+                  <div className="w-10 h-1 bg-[#4285F4] absolute -left-10 z-0"></div>
+
+                  <div className="flex-auto">
+                    <h1 className="text-lg">02:30 p.m. – 03:00 p.m</h1>
+                    <h1 className="text-xl font-bold">Speaker Session 3</h1>
+                  </div>
+                  <div></div>
+                </div>
+
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#FBBC05] border-2 border-[#FBBC05] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-[#FBBC05] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+
+                  <div className="w-10 h-1 bg-[#FBBC05] absolute -left-10 z-0"></div>
+
+                  <div className="flex-auto">
+                    <h1 className="text-lg">03:00 p.m. – 03:30 p.m</h1>
+                    <h1 className="text-xl font-bold">
+                      Career Grooming/ Resume Building
+                    </h1>
+                  </div>
+                  <div></div>
+                </div>
+
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#2ECC71] border-2 border-[#2ECC71] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-[#2ECC71] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+
+                  <div className="w-10 h-1 bg-[#2ECC71] absolute -left-10 z-0"></div>
+
+                  <div className="flex-auto">
+                    <h1 className="text-lg">03:30 p.m. – 04:15 p.m</h1>
+                    <h1 className="text-xl font-bold">Panel Discussion 2</h1>
+                  </div>
+                  <div></div>
+                </div>
+
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#EA4335] border-2 border-[#EA4335] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-[#EA4335] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+
+                  <div className="w-10 h-1 bg-[#EA4335] absolute -left-10 z-0"></div>
+
+                  <div className="flex-auto">
+                    <h1 className="text-lg">04:15 p.m. – 05:00 p.m</h1>
+                    <h1 className="text-xl font-bold">Jamming Session</h1>
+                  </div>
+                  <div></div>
+                </div>
+
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#4285F4] border-2 border-[#4285F4] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-[#4285F4] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+
+                  <div className="w-10 h-1 bg-[#4285F4] absolute -left-10 z-0"></div>
+
+                  <div className="flex-auto">
+                    <h1 className="text-lg">05:00 p.m. – 06:00 p.m</h1>
+                    <h1 className="text-xl font-bold">
+                      Networking and Conclusion
+                    </h1>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
           </dir>
         </Box>
       </Modal>

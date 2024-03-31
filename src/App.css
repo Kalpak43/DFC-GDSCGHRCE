@@ -1,5 +1,5 @@
 :root {
-  --bg-clr: #fff;
+  --bg-clr: #ededed;
   --font-clr: #000;
 
   --google-red: #ea4335;
@@ -75,4 +75,8 @@ body {
   border-radius: 0.5rem;
   transition: all 0.1s ease-in-out;
   padding: 1rem 1rem;
+}
+
+#b {
+  padding: 0;
 }
