@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Samarkan";
+  src: url(../../assets/fonts/Samarkan/SAMAN___.woff2) format("woff2"),
+    format("woff2");
+  font-weight: 400;
+}
+
+#logo {
+  font-family: Samarkan, sans-serif;
+}
+
+.logo-2 {
+    display: inline-block;
+    background-image: linear-gradient(
+      to right,
+      var(--google-red),
+      var(--google-blue),
+      var(--google-yellow),
+      var(--google-green)
+    );
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
