@@ -19,8 +19,8 @@ const style = {
   height: "85%",
   
   borderRadius: "2%",
-  overflowY:'auto ',
-  border: "1px solid black",
+  overflowY:'auto ', 
+  // border: "1px solid black",
   boxShadow: 24,
   p: 4,
 };
@@ -67,7 +67,7 @@ export default function Schedule() {
       >
         <Box sx={style} lg={largeStyle}>
           <dir >
-            <div className=" w-[2%] h-[2%] fixed hover:cursor-pointer ">
+            <div className=" w-[15px] h-[15px] fixed hover:cursor-pointer ">
             <img  src={closeButton} onClick={handleClose} alt="close button" />
 
             </div>

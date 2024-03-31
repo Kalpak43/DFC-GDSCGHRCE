@@ -8,6 +8,8 @@ function Layout() {
     <Outlet/>
     <ThemeToggler />
     </>
+
+    
   )
 }
 
