@@ -1,14 +1,16 @@
 import React from "react";
 
-export default function Button({
-    text
-}) {
+export default function Button({ text, clr, link, download=false }) {
+  console.log(text, clr)
   return (
     <a
-      href="https://gdscghrce.netlify.app/"
-      className="relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-medium transition duration-300 ease-out border-2 border-[var(--google-blue)] rounded-full shadow-md group"
+      href={link}
+      className={
+        `relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-medium transition duration-300 ease-out border-2 border-${clr} rounded-full shadow-md group`
+      }
+      download={download}
     >
-      <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[var(--google-blue)] group-hover:translate-x-0 ease">
+      <span className={`absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-${clr} group-hover:translate-x-0 ease`}>
         <svg
           className="w-6 h-6"
           fill="none"

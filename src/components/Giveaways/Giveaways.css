@@ -1,0 +1,12 @@
+.list-ticks li {
+    margin-bottom: 0.5em;
+}
+
+.list-ticks li::before {
+  content: "✔"; /* this is your tick */
+  color: var(--google-green); /* this is the color of your tick */
+  display: inline-block; /* this makes the tick an inline element */
+ /* this is the width of the tick area */
+  margin-left: -1em; /* this pulls the tick into the tick area */
+  margin-right: 0.5em;
+}

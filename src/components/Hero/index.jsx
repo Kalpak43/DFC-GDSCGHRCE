@@ -1,61 +1,183 @@
+import { useState } from "react";
 import Button from "../Button";
+import Logo from "../Logo";
 import "./hero.css";
+import { Box, Modal } from "@mui/material";
+import { GiCancel } from "react-icons/gi";
 
 export default function Hero() {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <div className="hero w-full h-full flex flex-col items-center justify-center">
-      <div className="flex">
+      <Logo />
+      <small>Presents</small>
+      <h1 className="text-5xl md:text-7xl my-2" id="logo">
+        Techostav
+      </h1>
+
+      <div className="flex gap-4 flex-wrap justify-center">
         <a
           href="/"
-          className="border-none bg-transparent hover:border-none hover:bg-transparent"
+          className={`relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-medium transition duration-300 ease-out border-2 border-[var(--google-green)] rounded-full shadow-md group`}
         >
-          <span className="logo w-fit z-50 flex justify-center items-center">
+          <span
+            className={`absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[var(--google-green)] group-hover:translate-x-0 ease`}
+          >
             <svg
-              className="h-8 md:h-12"
-              id="Layer_1"
-              data-name="Layer 1"
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 192 192"
-              width="50"
-              height="100"
             >
-              <defs></defs>
-              <title>dsc_icon</title>
               <path
-                className="Logo_logoRedPart__QJGXu text-[var(--google-red)]"
-                fill="currentColor"
-                d="M46.36,96.68,77,79A15.06,15.06,0,1,0,61.91,52.91L9,83.45Z"
-              ></path>
-              <path
-                className="Logo_logoBluePart__Gg0LP text-[var(--google-blue)]"
-                fill="currentColor"
-                d="M69.43,142.11A15.07,15.07,0,0,0,77,114L24.07,83.45A15.06,15.06,0,0,0,9,109.54l52.9,30.54A15,15,0,0,0,69.43,142.11Z"
-              ></path>
-              <path
-                className="Logo_logoYellowPart__AVkWI text-[var(--google-green)]"
-                fill="currentColor"
-                d="M122.05,142.11a15,15,0,0,0,7.52-2l52.9-30.54L145.59,96.05,114.5,114a15.07,15.07,0,0,0,7.55,28.12Z"
-              ></path>
-              <path
-                className="Logo_logoGreenPart__LnIju text-[var(--google-yellow)]"
-                fill="currentColor"
-                d="M174.92,111.56a15.06,15.06,0,0,0,7.55-28.11l-52.9-30.54A15.06,15.06,0,0,0,114.5,79l52.9,30.54A15,15,0,0,0,174.92,111.56Z"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
               ></path>
             </svg>
-            <div className="logo-text flex-col gap-0 relative normal-case font-normal text-[var(--font-clr)]">
-              <p className="text-sm md:text-lg">Gooogle Developer Student Clubs</p>
-              <small className="text-[60%] md:text-[85%] absolute top-[80%]">
-                G.H. Raisoni College of Engineering, Nagpur
-              </small>
-            </div>
           </span>
+          <span className="absolute flex items-center justify-center w-full h-full transition-all duration-300 transform group-hover:translate-x-full ease">
+            Register Now
+          </span>
+          <span className="relative invisible">Register Now</span>
         </a>
+        <button
+          onClick={handleOpen}
+          className="relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-medium transition duration-300 ease-out border-2 border-[var(--google-blue)] rounded-full shadow-md group"
+        >
+          <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[var(--google-blue)] group-hover:translate-x-0 ease">
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              ></path>
+            </svg>
+          </span>
+          <span className="absolute flex items-center justify-center w-full h-full transition-all duration-300 transform group-hover:translate-x-full ease">
+            Learn More
+          </span>
+          <span className="relative invisible">Learn More</span>
+        </button>
       </div>
-      <small>Presents</small>
-      <h1 className="text-5xl md:text-7xl my-2">Technostav</h1>
 
-      <Button text={"Register Now"} />
-      
+      <Modal
+        open={open}
+        onClose={handleClose}
+        className="px-4 py-4 md:px-16 md:py-6"
+      >
+        <Box className="h-full w-full">
+          <div className="relative w-full h-full bg-[var(--bg-clr)] rounded-xl shadow shadow-[var(--google-blue)] flex flex-col md:justify-center gap-y-8 lg:px-20 gap-4 place-items-center overflow-y-scroll p-4">
+            <button
+              className="absolute top-0 right-0 text-2xl m-2"
+              onClick={handleClose}
+            >
+              <GiCancel />
+            </button>
+            <h2 className="text-4xl md:text-6xl my-2 text-center">
+              What is{" "}
+              <span id="logo" className="logo-2">
+                Techotsav
+              </span>
+              ?
+            </h2>
+            <div className="text-justify">
+              <ul className="list-disc space-y-4">
+                <li>
+                  Techotsav is an amazing opportunity to explore the constantly
+                  changing world of technology that you don't want to miss. It
+                  doesn't matter if you're an experienced programmer, a new
+                  enthusiast, or just excited by the endless possibilities of
+                  tech, this event is designed especially for you.
+                </li>
+                <li>
+                  Techotsav is a Tech day that brings young developers, tech
+                  enthusiasts, industry experts and students from different
+                  parts of Nagpur to learn, share, and collaborate on various
+                  topics and dive deep into the world of programming languages,
+                  decode the mysteries of AI, and venture into the realms of
+                  machine learning and leave with a treasure trove of knowledge
+                  and newfound skills ready to conquer the tech universe.
+                </li>
+                <li>
+                  Techotsav attendees get a chance to explore networking
+                  opportunities, and foster knowledge exchange and skill
+                  development with the tech community, developers, industry
+                  experts,and profound Speakers.
+                </li>
+              </ul>
+              <div className="flex flex-wrap justify-center text-center my-8 gap-4">
+                <a
+                  href="/"
+                  className={`relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-medium transition duration-300 ease-out border-2 border-[var(--google-green)] rounded-full shadow-md group`}
+                >
+                  <span
+                    className={`absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[var(--google-green)] group-hover:translate-x-0 ease`}
+                  >
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span className="absolute flex items-center justify-center w-full h-full transition-all duration-300 transform group-hover:translate-x-full ease">
+                    Register Now
+                  </span>
+                  <span className="relative invisible">Register Now</span>
+                </a>
+                <a
+                  href="/"
+                  className={`relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-medium transition duration-300 ease-out border-2 border-[var(--google-yellow)] rounded-full shadow-md group`}
+                >
+                  <span
+                    className={`absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[var(--google-yellow)] group-hover:translate-x-0 ease`}
+                  >
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span className="absolute flex items-center justify-center w-full h-full transition-all duration-300 transform group-hover:translate-x-full ease">
+                    Download Brochure
+                  </span>
+                  <span className="relative invisible">Download Brochure</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </Box>
+      </Modal>
     </div>
   );
 }
