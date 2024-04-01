@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Card from "./Card";
 
 export default function Speakers() {
   const [hideModal, setHideModal] = useState(true);
@@ -9,9 +10,10 @@ export default function Speakers() {
         Speakers
       </h1>
       <br />
-      <p className="bg-gradient-to-r from-[var(--google-yellow)] to-[var(--google-green)] inline-block text-transparent bg-clip-text">
+      <Card/>
+      {/* <p className="bg-gradient-to-r from-[var(--google-yellow)] to-[var(--google-green)] inline-block text-transparent bg-clip-text">
         Revealing Soon...
-      </p>
+      </p> */}
     </div>
   );
 }
