@@ -6,7 +6,7 @@ import Modal from "@mui/material/Modal";
 // import Grid from "@mui/material/Grid";
 // import { styled } from "@mui/material/styles";
 // import Paper from "@mui/material/Paper";
-import closeButton from "../../assets/icon.png";
+import { FaArrowRight } from "react-icons/fa";
 import { GiCancel } from "react-icons/gi";
 const style = {
   position: "absolute",
@@ -42,14 +42,6 @@ const largeStyle = {
   p: 4,
 };
 
-// const Item = styled(Paper)(({ theme }) => ({
-//   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-//   ...theme.typography.body2,
-//   padding: theme.spacing(1),
-//   textAlign: "center",
-//   color: theme.palette.text.secondary,
-// }));
-
 export default function Schedule() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -58,11 +50,14 @@ export default function Schedule() {
   return (
     <div className="w-full h-full flex flex-col items-center justify-center">
       <button
-        className="group h-full w-full text-4xl font-bold bg-gradient-to-r from-[var(--google-red)] to-[var(--google-blue)] inline-block text-transparent bg-clip-text hover:bg-transparent"
+        className="group overflow-hidden relative h-full w-full text-4xl font-bold bg-gradient-to-r from-[var(--google-red)] to-[var(--google-blue)] inline-block text-transparent bg-clip-text hover:bg-transparent transition-all duration-700 hover:text-white"
         onClick={handleOpen}
       >
-        Schedule
-        <span className="hidden group-hover:inline">{" >"}</span>
+        Schedule{" "}
+        <div className="text-white hidden group-hover:block">
+          <FaArrowRight className="block mx-auto" />
+        </div>
+        <div className="h-full w-full absolute top-0 left-0 z-[-1] bg-gradient-to-r from-[var(--google-red)] to-[var(--google-blue)] rounded-lg bg-opacity-100 opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
       </button>
       {/* <h1 className="text-4xl font-bold bg-gradient-to-r from-[var(--google-red)] to-[var(--google-blue)] inline-block text-transparent bg-clip-text">
         Schedule
@@ -92,10 +87,10 @@ export default function Schedule() {
 
             <div className="w-12/12 md:w-7/12 lg:6/12 mx-auto relative ">
               <div className="border-l-2 border-[var(--font-clr)] mt-10">
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#EA4335] border-2 border-[#EA4335] bg-opacity-40 rounded md:rounded-full mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
-                  <div className="w-5 h-5 bg-[#4285F4] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#EA4335] border-2 border-[#EA4335] bg-opacity-40 rounded-2xl md:rounded-full mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-[#EA4335] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
-                  <div className="w-10 h-1 bg-[#4285F4] absolute -left-10 z-0"></div>
+                  <div className="w-10 h-1 bg-[#EA4335] absolute -left-10 z-0"></div>
 
                   <div className="flex-auto">
                     <h1 className="text-lg">09:30 a.m. – 10:30 a.m</h1>
@@ -105,10 +100,10 @@ export default function Schedule() {
                   </div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#4285F4] border-2 border-[#4285F4] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
-                  <div className="w-5 h-5 bg-[#EA4335] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#4285F4] border-2 border-[#4285F4] bg-opacity-40 rounded-2xl md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-[#4285F4] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
-                  <div className="w-10 h-1 bg-[#EA4335] absolute -left-10 z-0"></div>
+                  <div className="w-10 h-1 bg-[#4285F4] absolute -left-10 z-0"></div>
 
                   <div className="flex-auto">
                     <h1 className="text-lg">10:30 a.m. – 10:40 a.m</h1>
@@ -117,7 +112,7 @@ export default function Schedule() {
                   <div></div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#FBBC05] border-2 border-[#FBBC05] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#FBBC05] border-2 border-[#FBBC05] bg-opacity-40 rounded-2xl md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                   <div className="w-5 h-5 bg-[#FBBC05] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-[#FBBC05] absolute -left-10 z-0"></div>
@@ -131,7 +126,7 @@ export default function Schedule() {
                   <div></div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#2ECC71] border-2 border-[#2ECC71] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#2ECC71] border-2 border-[#2ECC71] bg-opacity-40 rounded-2xl md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                   <div className="w-5 h-5 bg-[#2ECC71] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-[#2ECC71] absolute -left-10 z-0"></div>
@@ -143,7 +138,7 @@ export default function Schedule() {
                   <div></div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#EA4335] border-2 border-[#EA4335] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#EA4335] border-2 border-[#EA4335] bg-opacity-40 rounded-2xl md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                   <div className="w-5 h-5 bg-[#EA4335] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-[#EA4335] absolute -left-10 z-0"></div>
@@ -155,7 +150,7 @@ export default function Schedule() {
                   <div></div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4  bg-[#4285F4] border-2 border-[#4285F4] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4  bg-[#4285F4] border-2 border-[#4285F4] bg-opacity-40 rounded-2xl md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                   <div className="w-5 h-5 bg-[#4285F4] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-[#4285F4] absolute -left-10 z-0"></div>
@@ -167,7 +162,7 @@ export default function Schedule() {
                   <div></div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4  bg-[#FBBC05] border-2 border-[#FBBC05] bg-opacity-40 border-2 border-[#FBBC05] bg-opacity-4 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4  bg-[#FBBC05] border-2 border-[#FBBC05] bg-opacity-40 rounded-2xl md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                   <div className="w-5 h-5 bg-[#FBBC05] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-[#FBBC05] absolute -left-10 z-0"></div>
@@ -179,7 +174,7 @@ export default function Schedule() {
                   <div></div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4  bg-[#2ECC71] border-2 border-[#2ECC71] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4  bg-[#2ECC71] border-2 border-[#2ECC71] bg-opacity-40 rounded-2xl md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                   <div className="w-5 h-5 bg-[#2ECC71] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-[#2ECC71] absolute -left-10 z-0"></div>
@@ -191,7 +186,7 @@ export default function Schedule() {
                   <div></div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#EA4335] border-2 border-[#EA4335] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#EA4335] border-2 border-[#EA4335] bg-opacity-40 rounded-2xl md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                   <div className="w-5 h-5 bg-[#EA4335] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-[#EA4335] absolute -left-10 z-0"></div>
@@ -205,7 +200,7 @@ export default function Schedule() {
                   <div></div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#4285F4] border-2 border-[#4285F4] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#4285F4] border-2 border-[#4285F4] bg-opacity-40 rounded-2xl md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                   <div className="w-5 h-5 bg-[#4285F4] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-[#4285F4] absolute -left-10 z-0"></div>
@@ -217,7 +212,7 @@ export default function Schedule() {
                   <div></div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#FBBC05] border-2 border-[#FBBC05] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#FBBC05] border-2 border-[#FBBC05] bg-opacity-40 rounded-2xl md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                   <div className="w-5 h-5 bg-[#FBBC05] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-[#FBBC05] absolute -left-10 z-0"></div>
@@ -231,7 +226,7 @@ export default function Schedule() {
                   <div></div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#2ECC71] border-2 border-[#2ECC71] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#2ECC71] border-2 border-[#2ECC71] bg-opacity-40 rounded-2xl md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                   <div className="w-5 h-5 bg-[#2ECC71] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-[#2ECC71] absolute -left-10 z-0"></div>
@@ -243,7 +238,7 @@ export default function Schedule() {
                   <div></div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#EA4335] border-2 border-[#EA4335] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#EA4335] border-2 border-[#EA4335] bg-opacity-40 rounded-2xl md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                   <div className="w-5 h-5 bg-[#EA4335] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-[#EA4335] absolute -left-10 z-0"></div>
@@ -255,7 +250,7 @@ export default function Schedule() {
                   <div></div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#4285F4] border-2 border-[#4285F4] bg-opacity-40 rounded md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#4285F4] border-2 border-[#4285F4] bg-opacity-40 rounded-2xl md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                   <div className="w-5 h-5 bg-[#4285F4] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-[#4285F4] absolute -left-10 z-0"></div>
