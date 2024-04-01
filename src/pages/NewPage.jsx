@@ -8,7 +8,10 @@ import Sponsors from "../components/Sponsors";
 import CommunityPartners from "../components/CommunityPartners";
 import SocialMedia from "../components/SocialMedia";
 import Schedule from "../components/schedule/schedule";
+
+// import Venue from "../components/venue";
 import Background from "../components/Background/Background";
+import Venue from "../components/venue";
 
 
 export default function NewPage() {
@@ -65,7 +68,7 @@ export default function NewPage() {
           <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
           <Timer />
         </div>
-        <div key="b" className="select-none container">
+        <div key="b" className="select-none container" id="b">
           <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
           <Schedule />
         </div>
@@ -75,15 +78,7 @@ export default function NewPage() {
         </div>
         <div key="d" className="select-none container">
           <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
-          <div className="hero w-full h-full flex flex-col items-center justify-center">
-            <h1 className="text-4xl font-bold bg-gradient-to-r from-[var(--google-red)] to-[var(--google-blue)] inline-block text-transparent bg-clip-text">
-              Venue
-            </h1>
-            <br />
-            <p className="bg-gradient-to-r from-[var(--google-yellow)] to-[var(--google-green)] inline-block text-transparent bg-clip-text">
-              Revealing Soon...
-            </p>
-          </div>
+          <Venue />
         </div>
         <div key="f" className="select-none container">
           <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
@@ -97,7 +92,7 @@ export default function NewPage() {
           <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
           <Sponsors />
         </div>
-        <div key="i" className="select-none container">
+        <div key="i" className="select-none container" id="i">
           <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
           <CommunityPartners />
         </div>

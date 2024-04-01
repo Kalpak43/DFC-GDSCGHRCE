@@ -1,5 +1,6 @@
 import React from "react";
 import Speakers from "../components/Speakers";
+import Venue from "../components/venue";
 
 function HomePage() {
 
@@ -25,6 +26,7 @@ function HomePage() {
           <p className="text-3xl">Venue</p>
           <p className="text-3xl">Venue</p>
           <p className="text-3xl">Venue</p>
+          <Venue/>
         </div>
         <div className="border-2 border-black rounded-2xl">
           <p className="text-3xl">Dark Mode</p>

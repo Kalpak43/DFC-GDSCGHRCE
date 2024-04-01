@@ -4,6 +4,7 @@ import Logo from "../Logo";
 import "./hero.css";
 import { Box, Modal } from "@mui/material";
 import { GiCancel } from "react-icons/gi";
+import brochure from "../../assets/brochure.pdf";
 
 export default function Hero() {
   const [open, setOpen] = useState(false);
@@ -15,12 +16,14 @@ export default function Hero() {
       <Logo />
       <small>Presents</small>
       <h1 className="text-5xl md:text-7xl my-2" id="logo">
-        Techostav
+        Techotsav
       </h1>
+
+      <p className="my-2">On 21 April, 2024</p>
 
       <div className="flex gap-4 flex-wrap justify-center">
         <a
-          href="/"
+          href="https://forms.gle/C4iVNtLzLJLR42fH7"
           className={`relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-medium transition duration-300 ease-out border-2 border-[var(--google-green)] rounded-full shadow-md group`}
         >
           <span
@@ -120,7 +123,7 @@ export default function Hero() {
               </ul>
               <div className="flex flex-wrap justify-center text-center my-8 gap-4">
                 <a
-                  href="/"
+                  href="https://forms.gle/C4iVNtLzLJLR42fH7"
                   className={`relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-medium transition duration-300 ease-out border-2 border-[var(--google-green)] rounded-full shadow-md group`}
                 >
                   <span
@@ -147,8 +150,9 @@ export default function Hero() {
                   <span className="relative invisible">Register Now</span>
                 </a>
                 <a
-                  href="/"
+                  href={brochure}
                   className={`relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-medium transition duration-300 ease-out border-2 border-[var(--google-yellow)] rounded-full shadow-md group`}
+                  download={true}
                 >
                   <span
                     className={`absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[var(--google-yellow)] group-hover:translate-x-0 ease`}

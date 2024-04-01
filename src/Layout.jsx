@@ -10,6 +10,8 @@ function Layout() {
     <Outlet/>
     {/* <ThemeToggler /> */}
     </>
+
+    
   )
 }
 
