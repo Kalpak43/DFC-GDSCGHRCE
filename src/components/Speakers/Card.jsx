@@ -14,8 +14,10 @@ function Card(props) {
 
   return (
     <div className="container ">
-      <div className="card flex flex-wrap  w-max ">
-        <div className="card__border rounded-full p-1 mt-5 mr-10 hover:scale-105">
+      <div className="card flex h-[90%] justify-start items-start w-[100%] ">
+        
+        <div className='flex justify-start items-start gap-0  px-12 w-full '>
+        <div className="card__border rounded-full self-start p-1 mt-5 hover:scale-105">
           <img
             src="https://i.pinimg.com/736x/ba/92/7f/ba927ff34cd961ce2c184d47e8ead9f6.jpg"
             alt="card image"
@@ -23,13 +25,14 @@ function Card(props) {
           />
         </div>
         <div className='mt-12 '>
-          <h3 className="card__name text-xl">{props.name}</h3>
-          <span className="card__profession text-sm">{props.role}</span>
+          <h3 className="card__name text-3xl">{props.name}</h3>
+          <span className="card__profession text-white text-lg">{props.role}</span>
 
+        </div>
         </div>
 
         <div className={`card__social ${showSocial ? 'animation' : ''}`} id="card-social">
-          <div className="card__social-control">
+          <div className="card__social-control ">
             <div className="card__social-toggle" onMouseEnter={toggleSocial} id="card-toggle">
               <span className="ri--add-line"></span>
             </div>
