@@ -48,19 +48,27 @@ img {
 .container {
   height: 100vh;
   margin-inline: 1.5rem;
-  display: grid;
-  place-items: center;
+  display: flex;
+  width: 100%;
+  /* flex-direction: row;
+  place-items: ; */
 }
 
 .card {
   position: relative;
-  width: 256px;
+  /* width: 256px; */
+  width: 100%;
+  
+
   /* background-color: var(--black-color); */
   background-color: #e3e3e37e;
   border: 1px solid black;
   padding: 1.25rem 2rem 3rem;
   border-radius: 1.5rem;
   text-align: center;
+  display: flex;
+  justify-content: start;
+  /* flex-direction: row; */
   /* box-shadow: 0 4px 16px hsla(29, 75%, 8%, 0.2); */
 }
 
@@ -75,13 +83,12 @@ img {
   height: 80px;
   /* border: 2px solid var(--first-color); */
   border: 2px solid #f9ab00;
-  border-radius: 50%;
+  
   display: grid;
-  place-items: center;
-  /* margin: 0 auto 0.75rem; */
-  margin: -40px -15px -10px -20px ;
-}
+  place-items: start;
+  margin: 0 auto 0.75rem;
 
+}
 .card__name {
   /* color: var(--first-color); */
   color: #f9ab00;
@@ -101,6 +108,8 @@ img {
   width: 200px;
   /* background-color: var(--first-color);
    */
+   display: flex;
+   flex-direction: row;
    background-color: #34a853;
   padding: 0.75rem;
   border-radius: 3rem;
