@@ -67,14 +67,14 @@ export default function NewPage() {
           <Timer />
         </div>
         <div key="b" className="select-none container" id="b">
-          <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
+          <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full z-50"></div>
           <Schedule />
         </div>
         <div key="c" className="select-none container">
           <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
           <Hero />
         </div>
-        <div key="d" className="select-none container">
+        <div key="d" id="d" className="select-none container shadow-lg">
           <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
           <Venue />
         </div>

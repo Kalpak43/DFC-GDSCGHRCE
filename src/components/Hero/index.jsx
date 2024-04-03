@@ -75,6 +75,7 @@ export default function Hero() {
           <span className="relative invisible">Learn More</span>
         </button>
       </div>
+      <p className="my-2 text-[var(--google-green)]">(Accomodation will be provided on paid Basis.)</p>
 
       <Modal
         open={open}
