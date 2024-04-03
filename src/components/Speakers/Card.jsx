@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import './Card.css';
+import React, { useState } from "react";
+import "./Card.css";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
-
 
 function Card(props) {
   const [showSocial, setShowSocial] = useState(false);
@@ -53,6 +52,9 @@ function Card(props) {
               </a>
             </ul>
           </div>
+
+
+          
         </div>
       </div>
     </div>

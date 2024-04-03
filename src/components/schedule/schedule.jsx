@@ -6,7 +6,6 @@ import Modal from "@mui/material/Modal";
 // import Grid from "@mui/material/Grid";
 // import { styled } from "@mui/material/styles";
 // import Paper from "@mui/material/Paper";
-import closeButton from "../../assets/icon.png";
 import { GiCancel } from "react-icons/gi";
 const style = {
   position: "absolute",
