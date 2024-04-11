@@ -85,7 +85,7 @@ img {
 .card__name {
   /* color: var(--first-color); */
   color: #f9ab00;
-  font-size: var(--h3-font-size);
+  font-size: var(--h3-font-size); 
   font-weight: 500;
 }
 
