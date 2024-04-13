@@ -54,8 +54,8 @@ export default function Schedule() {
         onClick={handleOpen}
       >
         Schedule{" "}
-        <div className="text-white hidden group-hover:block">
-          <FaArrowRight className="block mx-auto" />
+        <div className="block">
+          <FaArrowRight className="block mx-auto text-[var(--font-clr)] group-hover:text-white" />
         </div>
         <div className="h-full w-full absolute top-0 left-0 z-[-1] bg-gradient-to-r from-[var(--google-red)] to-[var(--google-blue)] rounded-lg bg-opacity-100 opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
       </button>
@@ -133,7 +133,9 @@ export default function Schedule() {
 
                   <div className="flex-auto">
                     <h1 className="text-base">11:00 a.m. – 11:30 a.m</h1>
-                    <h1 className="text-xl font-[500]">Keynote</h1>
+                    <h1 className="text-xl font-[500]">
+                      Keynote 1: Role of AI to bridge industry academia gap
+                    </h1>
                   </div>
                   <div></div>
                 </div>
@@ -145,7 +147,9 @@ export default function Schedule() {
 
                   <div className="flex-auto">
                     <h1 className="text-base">11:30 a.m. – 12:00 p.m</h1>
-                    <h1 className="text-xl font-[500]">Speaker Session 1</h1>
+                    <h1 className="text-xl font-[500]">
+                      Keynote 2: Cyber Security
+                    </h1>
                   </div>
                   <div></div>
                 </div>
@@ -157,7 +161,7 @@ export default function Schedule() {
 
                   <div className="flex-auto">
                     <h1 className="text-base">12:00 p.m. – 12:30 p.m</h1>
-                    <h1 className="text-xl font-[500]">Speaker Session 2</h1>
+                    <h1 className="text-xl font-[500]">Keynote 3</h1>
                   </div>
                   <div></div>
                 </div>
@@ -169,7 +173,10 @@ export default function Schedule() {
 
                   <div className="flex-auto">
                     <h1 className="text-base">12:30 p.m. – 1:15 p.m</h1>
-                    <h1 className="text-xl font-[500]">Panel Discussion 1</h1>
+                    <h1 className="text-xl font-[500]">
+                      Panel Discussion 1: Generative AI in Industry And academic
+                      research
+                    </h1>
                   </div>
                   <div></div>
                 </div>
@@ -194,7 +201,7 @@ export default function Schedule() {
                   <div className="flex-auto">
                     <h1 className="text-base">02:00 p.m. – 02:30 p.m</h1>
                     <h1 className="text-xl font-[500]">
-                      Technical Treasure Hunt
+                      Technical Treasure Hunt / Jamming Session
                     </h1>
                   </div>
                   <div></div>
@@ -207,7 +214,10 @@ export default function Schedule() {
 
                   <div className="flex-auto">
                     <h1 className="text-base">02:30 p.m. – 03:00 p.m</h1>
-                    <h1 className="text-xl font-[500]">Speaker Session 3</h1>
+                    <h1 className="text-xl font-[500]">
+                      Speaker Session 3: Impact of salesforce on process
+                      automation
+                    </h1>
                   </div>
                   <div></div>
                 </div>
@@ -232,8 +242,8 @@ export default function Schedule() {
                   <div className="w-10 h-1 bg-[#2ECC71] absolute -left-10 z-0"></div>
 
                   <div className="flex-auto">
-                    <h1 className="text-base">03:30 p.m. – 04:15 p.m</h1>
-                    <h1 className="text-xl font-[500]">Panel Discussion 2</h1>
+                    <h1 className="text-base">03:30 p.m. – 04:00 p.m</h1>
+                    <h1 className="text-xl font-[500]">Speaker Session 4</h1>
                   </div>
                   <div></div>
                 </div>
@@ -244,8 +254,8 @@ export default function Schedule() {
                   <div className="w-10 h-1 bg-[#EA4335] absolute -left-10 z-0"></div>
 
                   <div className="flex-auto">
-                    <h1 className="text-base">04:15 p.m. – 05:00 p.m</h1>
-                    <h1 className="text-xl font-[500]">Jamming Session</h1>
+                    <h1 className="text-base">04:00 p.m. – 04:30 p.m</h1>
+                    <h1 className="text-xl font-[500]">Speaker Session 5</h1>
                   </div>
                   <div></div>
                 </div>
@@ -256,9 +266,23 @@ export default function Schedule() {
                   <div className="w-10 h-1 bg-[#4285F4] absolute -left-10 z-0"></div>
 
                   <div className="flex-auto">
+                    <h1 className="text-base">04:30 p.m. – 05:00 p.m</h1>
+                    <h1 className="text-xl font-[500]">
+                      Panel Discussion 2: Current IT market Scenario and Job
+                      Readiness to technocrats
+                    </h1>
+                  </div>
+                  <div></div>
+                </div>
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#4285F4] border-2 border-[#4285F4] bg-opacity-40 rounded-2xl md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-[#4285F4] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+
+                  <div className="w-10 h-1 bg-[#4285F4] absolute -left-10 z-0"></div>
+
+                  <div className="flex-auto">
                     <h1 className="text-base">05:00 p.m. – 06:00 p.m</h1>
                     <h1 className="text-xl font-[500]">
-                      Networking and Conclusion
+                      Valedictory
                     </h1>
                   </div>
                   <div></div>

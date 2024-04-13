@@ -13,7 +13,9 @@ import Schedule from "../components/schedule/schedule";
 import Background from "../components/Background/Background";
 import Venue from "../components/venue";
 
+
 export default function NewPage() {
+  
   const layouts = {
     lg: [
       { i: "a", x: 0, y: 0, w: 1, h: 1 },
@@ -29,7 +31,7 @@ export default function NewPage() {
     md: [
       { i: "a", x: 0, y: 0, w: 1, h: 2 },
       { i: "b", x: 1, y: 1, w: 1, h: 3 },
-      { i: "c", x: 0, y: 0, w: 2, h: 6 },
+      { i: "c", x: 0, y: 0, w: 2, h: 8 },
       { i: "d", x: 0, y: 4, w: 2, h: 4 },
       { i: "f", x: 0, y: 0, w: 2, h: 6 },
       { i: "g", x: 0, y: 2, w: 2, h: 7 },
@@ -50,7 +52,7 @@ export default function NewPage() {
   const ResponsiveGridLayout = WidthProvider(Responsive);
 
   return (
-    <div className="lg:h-screen px-0 lg:px-4" ref={layoutRef}>
+    <div className=" lg:h-screen px-0 lg:px-4" ref={layoutRef}>
       <Background />
       <ResponsiveGridLayout
         className="layout my-auto"
@@ -62,7 +64,7 @@ export default function NewPage() {
         compactType="vertical"
         draggableHandle=".dragHandle"
       >
-        <div key="a" className="select-none container order-1 lg:order-auto">
+        <div key="a" className=" select-none container order-1 lg:order-auto">
           <div className="dragHandle absolute top-2 left-0 right-0 w-12 h-2 mx-auto bg-blue-400 cursor-[grab] rounded-full"></div>
           <Timer />
         </div>

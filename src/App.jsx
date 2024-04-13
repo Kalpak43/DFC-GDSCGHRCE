@@ -6,6 +6,7 @@ import NewPage from "./pages/NewPage";
 import { useEffect } from "react";
 import ReactGA from "react-ga";
 
+
 function App() {
   const location = useLocation();
   useEffect(() => {

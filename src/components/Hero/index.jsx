@@ -12,7 +12,7 @@ export default function Hero() {
   const handleClose = () => setOpen(false);
 
   return (
-    <div className="hero w-full h-full flex flex-col items-center justify-center">
+    <div className=" hero w-full h-full flex flex-col items-center justify-center">
       <Logo />
       <small>Presents</small>
       <h1 className="text-5xl md:text-7xl my-2" id="logo">
@@ -75,7 +75,7 @@ export default function Hero() {
           <span className="relative invisible">Learn More</span>
         </button>
       </div>
-      <p className="my-2 text-[var(--google-green)]">(Accomodation will be provided on paid Basis.)</p>
+      <p className="my-2 text-[var(--google-green)] text-center">(Accomodation will be provided on paid Basis.)</p>
 
       <Modal
         open={open}
