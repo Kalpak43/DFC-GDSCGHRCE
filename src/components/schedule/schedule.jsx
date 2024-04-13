@@ -274,10 +274,10 @@ export default function Schedule() {
                   </div>
                   <div></div>
                 </div>
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#4285F4] border-2 border-[#4285F4] bg-opacity-40 rounded-2xl md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
-                  <div className="w-5 h-5 bg-[#4285F4] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-[#FBBC05] border-2 border-[#FBBC05] bg-opacity-40 rounded-2xl md:rounded-full rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-[#FBBC05] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
-                  <div className="w-10 h-1 bg-[#4285F4] absolute -left-10 z-0"></div>
+                  <div className="w-10 h-1 bg-[#FBBC05] absolute -left-10 z-0"></div>
 
                   <div className="flex-auto">
                     <h1 className="text-base">05:00 p.m. – 06:00 p.m</h1>
