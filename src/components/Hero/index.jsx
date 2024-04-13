@@ -24,6 +24,7 @@ export default function Hero() {
       <div className="flex gap-4 flex-wrap justify-center">
         <a
           href="https://forms.gle/C4iVNtLzLJLR42fH7"
+          target="_blank"
           className={`relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-medium transition duration-300 ease-out border-2 border-[var(--google-green)] rounded-full shadow-md group`}
         >
           <span

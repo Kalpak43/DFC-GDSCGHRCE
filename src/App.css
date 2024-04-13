@@ -7,14 +7,14 @@
   --google-green: #34a853;
   --google-yellow: #f9ab00;
 
-  --container-clr: #e3e3e37e;
+  --container-clr: #c0c0c07e;
   
 }
 
 [data-theme="dark"] {
   --bg-clr: #000;
   --font-clr: #fff;
-  --container-clr: #7a7a7a7e;
+  --container-clr: #5c5c5c7e;
 }
 
 ::-webkit-scrollbar-track

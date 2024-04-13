@@ -1,6 +1,12 @@
 {
-  "name": "GDSC_GHRCE",
-  "short_name": "",
+  "name": "TechotsavGDSC GHRCE)",
+  "short_name": "Techotsav",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "description": "Techotsav is an amazing opportunity to explore the constantly changing world of technology that you don't want to miss. It doesn't matter if you're an experienced programmer, a new enthusiast, or just excited by the endless possibilities of tech, this event is designed especially for you.",
+  "prefer_related_applications": "false",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -11,9 +17,12 @@
       "src": "/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable"
     }
-  ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone"
+  ]
 }
