@@ -24,6 +24,7 @@ export default function Hero() {
       <div className="flex gap-4 flex-wrap justify-center">
         <a
           href="https://forms.gle/C4iVNtLzLJLR42fH7"
+          target="_blank"
           className={`relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-medium transition duration-300 ease-out border-2 border-[var(--google-green)] rounded-full shadow-md group`}
         >
           <span
@@ -75,6 +76,7 @@ export default function Hero() {
           <span className="relative invisible">Learn More</span>
         </button>
       </div>
+      <p className="my-2 text-[var(--google-green)] text-center">(Accomodation will be provided on paid Basis.)</p>
 
       <Modal
         open={open}

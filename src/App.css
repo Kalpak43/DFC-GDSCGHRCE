@@ -7,14 +7,14 @@
   --google-green: #34a853;
   --google-yellow: #f9ab00;
 
-  --container-clr: #e3e3e37e;
+  --container-clr: #c0c0c07e;
   
 }
 
 [data-theme="dark"] {
   --bg-clr: #000;
   --font-clr: #fff;
-  --container-clr: #7a7a7a7e;
+  --container-clr: #5c5c5c7e;
 }
 
 ::-webkit-scrollbar-track
@@ -75,8 +75,21 @@ body {
   border-radius: 0.5rem;
   transition: all 0.1s ease-in-out;
   padding: 1rem 1rem;
+  margin: 0;
 }
 
-#b {
+#b, #d {
   padding: 0;
+}
+
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
 }
