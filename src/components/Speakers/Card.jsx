@@ -15,7 +15,7 @@ function Card(props) {
     <div className="container ">
       <div className="card flex h-[90%] justify-start items-start w-[100%] ">
         
-        <div className='flex justify-start items-start gap-4  px-12 w-full '>
+        <div className='flex justify-start items-start gap-4  px-12 w-full  '>
         <div className="rounded-full border border-yellow-500 self-start  p-1 mt-5 hover:scale-105">
           <img
             src="https://i.pinimg.com/736x/ba/92/7f/ba927ff34cd961ce2c184d47e8ead9f6.jpg"
@@ -23,9 +23,9 @@ function Card(props) {
             className="card__img"
           />
         </div>
-        <div className='mt-12 '>
-          <h3 className="card__name text-3xl">{props.name}</h3>
-          <span className="card__profession text-white text-lg">{props.role}</span>
+        <div className='mt-8 mb-5'>
+          <h3 className="card__name text-2xl">{props.name}</h3>
+          <span className="card__profession text-black text-lg">{props.role}</span>
 
         </div>
         </div>
