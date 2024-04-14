@@ -4,6 +4,7 @@ import DAMN_logo from "../../assets/images/com_partners/DAMN.logo.png";
 import NASA_logo from "../../assets/images/com_partners/NAsa Space apps challenge nagpur.png";
 import DSC_SIT_logo from "../../assets/images/com_partners/DSC_SIT.png";
 import MLN_logo from "../../assets/images/com_partners/ML_Nagpur.png";
+import THM_logo from "../../assets/images/com_partners/THM.png";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { MdArrowLeft, MdArrowRight } from "react-icons/md";
@@ -35,6 +36,11 @@ export default function CommunityPartners() {
     {
       image: MLN_logo,
       alt: "MLN",
+      bg: 'b'
+    },
+    {
+      image: THM_logo,
+      alt: "THM",
       bg: 'b'
     }
   ];
