@@ -79,10 +79,7 @@ export default function Speakers() {
 
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { loop: true, axis: "y" },
-    [Autoplay()],
-    {
-      pauseOnHover: false,
-    }
+
   );
   const [prevBtnEnabled, setPrevBtnEnabled] = React.useState(false);
   const [nextBtnEnabled, setNextBtnEnabled] = React.useState(false);

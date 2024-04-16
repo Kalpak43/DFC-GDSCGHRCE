@@ -5,9 +5,9 @@ import { FaLinkedin } from "react-icons/fa6";
 
 function Card({ name, role, image, linkedin }) {
   return (
-    <div className="w-full h-full py-2">
-      <div className="relative md:h-[80%] w-full border-2 border-[var(--google-blue)] rounded-xl mb-4 flex flex-col md:flex-row gap-4 items-center justify-center  p-4 pb-8 bg-black bg-opacity-40">
-        <div className="w-[50%] md:w-auto md:h-[70%] aspect-square border-2 rounded-full">
+    <div className="w-full h-full py-4">
+      <div className="relative h-[90%] md:h-[80%] w-full border-2 border-[var(--google-blue)] rounded-xl mb-4 flex flex-col md:flex-row gap-4 items-center p-4 md:px-10 pb-8 bg-black bg-opacity-40">
+        <div className="w-[50%] md:w-auto md:h-[90%] aspect-square border-2 rounded-full">
           <img
             src={image}
             alt={name}
@@ -16,7 +16,7 @@ function Card({ name, role, image, linkedin }) {
         </div>
         <div className="text-center md:text-left mb-2 md:mb-0 text-white md:col-start-2 md:col-end-4">
           <h4 className="text-xl">{name}</h4>
-          <p>{role}</p>
+          <p className="text-sm">{role}</p>
         </div>
 
         <a
