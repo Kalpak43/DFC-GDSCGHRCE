@@ -89,6 +89,10 @@ body {
 .embla__container {
   display: flex;
 }
+.embla__container__vertical {
+  display: flex;
+  flex-direction: column;
+}
 .embla__slide {
   flex: 0 0 100%;
   min-width: 0;

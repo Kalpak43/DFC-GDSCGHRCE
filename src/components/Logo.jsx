@@ -4,7 +4,7 @@ export default function Logo() {
   return (
     <div className="flex">
       <a
-        href="https://gdscghrce.netlify.app/"
+        href="https://gdscghrce.in/"
         className="border-none bg-transparent hover:border-none hover:bg-transparent"
       >
         <span className="logo w-fit z-50 flex justify-center items-center">
