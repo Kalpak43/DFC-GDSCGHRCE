@@ -1,12 +1,23 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
-import { TiPlus } from "react-icons/ti";
-import { FaInstagram, FaYoutube, FaLinkedin, FaDiscord } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
+import {
+  IoIosArrowDropleft,
+  IoIosArrowDropright,
+  IoIosArrowDropdownCircle,
+  IoIosArrowDropupCircle,
+} from "react-icons/io";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+
 import Speaker1 from "../../assets/images/speakers/Dr_Rizwan_Ahmed.jpeg";
+import Speaker2 from "../../assets/images/speakers/Shrikant_Ardhapurkar.jpeg";
+import Speaker3 from "../../assets/images/speakers/Dr_Akshay_Zadgaonkar.jpeg";
+import Speaker4 from "../../assets/images/speakers/Aniruddha_Kalbande.jpeg";
+import Speaker5 from "../../assets/images/speakers/Shivam_Joshi.jpeg";
+import Speaker6 from "../../assets/images/speakers/Vishnu_Pillai.jpeg";
+import Speaker7 from "../../assets/images/speakers/Ashutosh_Shivhare.jpeg";
+import Speaker8 from "../../assets/images/speakers/Aakash_Singh.jpeg";
+import Speaker9 from "../../assets/images/speakers/Sachin_Untawale.jpeg";
 
 export default function Speakers() {
   const speakers = [
@@ -17,10 +28,52 @@ export default function Speakers() {
       linkedin: "https://www.linkedin.com/in/dr-rizwanahmed/",
     },
     {
-      name: "Dr. Rizwan Ahmed",
-      role: "Division Head-Digital Innovation @delaPlex",
-      image: Speaker1,
-      linkedin: "https://www.linkedin.com/in/dr-rizwanahmed/",
+      name: "Shirkant Ardhapurkar",
+      role: "Founder @Crypto Forensic Technology",
+      image: Speaker2,
+      linkedin: "https://www.linkedin.com/in/shrikant-ardhapurkar/",
+    },
+    {
+      name: "Dr. Akshay Zadgaonkar",
+      role: "Co-Founder @BabyVerse",
+      image: Speaker3,
+      linkedin: "https://www.linkedin.com/in/akshayz/",
+    },
+    {
+      name: "Aniruddha Kalbande",
+      role: "Founder & CEO of Fireblaze AI School",
+      image: Speaker4,
+      linkedin: "https://www.linkedin.com/in/aniruddhakalbande/",
+    },
+    {
+      name: "Shivam Joshi",
+      role: "Founder @Codon's Ltd.",
+      image: Speaker5,
+      linkedin: "https://www.linkedin.com/in/the-shivamjoshi/",
+    },
+    {
+      name: "Vishnu Pillai",
+      role: "Devops Engineer @Capegemini",
+      image: Speaker6,
+      linkedin: "https://www.linkedin.com/in/vishnu-pillai-797a67172/",
+    },
+    {
+      name: "Ashutosh Shivhare",
+      role: "Director @Data U Technologies",
+      image: Speaker7,
+      linkedin: "https://www.linkedin.com/in/ashutoshshivhare/",
+    },
+    {
+      name: "Aakash Singh",
+      role: "ASE @Deepcognition.ai",
+      image: Speaker8,
+      linkedin: "https://www.linkedin.com/in/aakash-singh-provoker/",
+    },
+    {
+      name: "Sachin Untawale",
+      role: "Director @G H Raisoni College of Engineering, Nagpur",
+      image: Speaker9,
+      linkedin: "https://www.linkedin.com/in/sachin-untawale-17504274/",
     },
   ];
 
@@ -31,19 +84,44 @@ export default function Speakers() {
       pauseOnHover: false,
     }
   );
+  const [prevBtnEnabled, setPrevBtnEnabled] = React.useState(false);
+  const [nextBtnEnabled, setNextBtnEnabled] = React.useState(false);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+
+    emblaApi.on("select", () => {
+      setPrevBtnEnabled(emblaApi.canScrollPrev());
+      setNextBtnEnabled(emblaApi.canScrollNext());
+    });
+  }, [emblaApi]);
+
+  const scrollPrev = () => {
+    if (emblaApi) emblaApi.scrollPrev();
+  };
+
+  const scrollNext = () => {
+    if (emblaApi) emblaApi.scrollNext();
+  };
 
   return (
     <div className="w-full h-full flex flex-col items-center justify-center px-8">
+      {/* <h1 className="text-4xl font-bold bg-gradient-to-r from-[var(--google-red)] to-[var(--google-blue)] inline-block text-transparent bg-clip-text">
+        Speakers
+      </h1>
+      <br />
+      <p className="">Revealing Soon...</p> */}
+
       <div className="flex justify-between items-center gap-4 w-full my-2">
         <h1 className="text-2xl font-bold bg-gradient-to-r from-[var(--google-red)] to-[var(--google-blue)] inline-block text-transparent bg-clip-text">
           Speakers
         </h1>
         <div className="flex text-2xl">
-          <button>
-            <IoIosArrowDropleft />
+          <button onClick={scrollPrev}>
+            <IoIosArrowDropupCircle />
           </button>
-          <button>
-            <IoIosArrowDropright />
+          <button onClick={scrollNext}>
+            <IoIosArrowDropdownCircle />
           </button>
         </div>
       </div>
