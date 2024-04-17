@@ -16,7 +16,7 @@ import Speaker4 from "../../assets/images/speakers/Aniruddha_Kalbande.jpeg";
 import Speaker5 from "../../assets/images/speakers/Shivam_Joshi.jpeg";
 import Speaker6 from "../../assets/images/speakers/Vishnu_Pillai.jpeg";
 import Speaker7 from "../../assets/images/speakers/Ashutosh_Shivhare.jpeg";
-import Speaker8 from "../../assets/images/speakers/Aakash_Singh.jpeg";
+import Speaker8 from "../../assets/images/speakers/akashS.jpg";
 import Speaker9 from "../../assets/images/speakers/Sachin_Untawale.jpeg";
 import Speaker10 from "../../assets/images/speakers/maneesh.jpg";
 import Speaker11 from "../../assets/images/speakers/arvind.jpg";
@@ -67,11 +67,17 @@ export default function Speakers() {
       image: Speaker7,
       linkedin: "https://www.linkedin.com/in/ashutoshshivhare/",
     },
+    // {
+    //   name: "Aakash Singh",
+    //   role: "ASE @Deepcognition.ai",
+    //   image: Speaker8,
+    //   linkedin: "https://www.linkedin.com/in/aakash-singh-provoker/",
+    // },
     {
       name: "Aakash Singh",
-      role: "ASE @Deepcognition.ai",
+      role: "Marketing Director @mindZcloud Technologies",
       image: Speaker8,
-      linkedin: "https://www.linkedin.com/in/aakash-singh-provoker/",
+      linkedin: "https://www.linkedin.com/in/aakash-singh-58479b96/",
     },
     {
       name: "Dr. Sachin Untawale",
