@@ -18,6 +18,10 @@ import Speaker6 from "../../assets/images/speakers/Vishnu_Pillai.jpeg";
 import Speaker7 from "../../assets/images/speakers/Ashutosh_Shivhare.jpeg";
 import Speaker8 from "../../assets/images/speakers/Aakash_Singh.jpeg";
 import Speaker9 from "../../assets/images/speakers/Sachin_Untawale.jpeg";
+import Speaker10 from "../../assets/images/speakers/maneesh.jpg";
+import Speaker11 from "../../assets/images/speakers/arvind.jpg";
+import Speaker12 from "../../assets/images/speakers/RamakrishnaR.jpg";
+import Speaker13 from "../../assets/images/speakers/AmitKale.jpg";
 
 export default function Speakers() {
   const speakers = [
@@ -51,12 +55,12 @@ export default function Speakers() {
       image: Speaker5,
       linkedin: "https://www.linkedin.com/in/the-shivamjoshi/",
     },
-    {
-      name: "Vishnu Pillai",
-      role: "Devops Engineer @Capegemini",
-      image: Speaker6,
-      linkedin: "https://www.linkedin.com/in/vishnu-pillai-797a67172/",
-    },
+    // {
+    //   name: "Vishnu Pillai",
+    //   role: "Devops Engineer @Capegemini",
+    //   image: Speaker6,
+    //   linkedin: "https://www.linkedin.com/in/vishnu-pillai-797a67172/",
+    // },
     {
       name: "Ashutosh Shivhare",
       role: "Director @Data U Technologies",
@@ -70,10 +74,32 @@ export default function Speakers() {
       linkedin: "https://www.linkedin.com/in/aakash-singh-provoker/",
     },
     {
-      name: "Sachin Untawale",
+      name: "Dr. Sachin Untawale",
       role: "Director @G H Raisoni College of Engineering, Nagpur",
       image: Speaker9,
       linkedin: "https://www.linkedin.com/in/sachin-untawale-17504274/",
+    },{
+      name: "Amit Kale",
+      role: "Associate Vice President @GlobalLogic ",
+      image:  Speaker13,
+      linkedin: "https://www.linkedin.com/in/amitakale/",
+    },
+    {
+      name: "Arvind Kumar",
+      role: "Center Head @TCS",
+      image:  Speaker11,
+      linkedin: "https://www.linkedin.com/in/arvind-kumar-2556716/",
+    },
+    {
+      name: "Ramakrishna R",
+      role: "Vice President & Head Procurement @REDDINGTON Limited",
+      image:  Speaker12,
+      linkedin: "https://www.linkedin.com/in/ramakrishna-r-44a41226/",
+    },{
+      name: "Maneesh Nair",
+      role: "Employability and Resume Trainer",
+      image:  Speaker10,
+      linkedin: "https://www.linkedin.com/in/maneesh-diwakaran-nair-05251525/",
     },
   ];
 
