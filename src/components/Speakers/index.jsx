@@ -20,7 +20,7 @@ import Speaker8 from "../../assets/images/speakers/Aakash_Singh.jpeg";
 import Speaker9 from "../../assets/images/speakers/Sachin_Untawale.jpeg";
 import Speaker10 from "../../assets/images/speakers/maneesh.jpg";
 import Speaker11 from "../../assets/images/speakers/arvind.jpg";
-import Speaker12 from "../../assets/images/speakers/RamakrishnaR.jpg";
+import Speaker12 from "../../assets/images/speakers/RamaR.jpg";
 import Speaker13 from "../../assets/images/speakers/AmitKale.jpg";
 
 export default function Speakers() {
@@ -92,9 +92,9 @@ export default function Speakers() {
     },
     {
       name: "Ramakrishna R",
-      role: "Vice President & Head Procurement @REDDINGTON Limited",
+      role: "Co-Founder and CEO @ImmverseAI",
       image:  Speaker12,
-      linkedin: "https://www.linkedin.com/in/ramakrishna-r-44a41226/",
+      linkedin: "https://www.linkedin.com/in/rama-immverse/",
     },{
       name: "Maneesh Nair",
       role: "Employability and Resume Trainer",
