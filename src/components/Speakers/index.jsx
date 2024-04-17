@@ -18,6 +18,10 @@ import Speaker6 from "../../assets/images/speakers/Vishnu_Pillai.jpeg";
 import Speaker7 from "../../assets/images/speakers/Ashutosh_Shivhare.jpeg";
 import Speaker8 from "../../assets/images/speakers/Aakash_Singh.jpeg";
 import Speaker9 from "../../assets/images/speakers/Sachin_Untawale.jpeg";
+import Speaker10 from "../../assets/images/speakers/Ramakrishnan_R.jpeg";
+import Speaker11 from "../../assets/images/speakers/Amit_Kale.jpeg";
+import Speaker12 from "../../assets/images/speakers/Vivek_Nanoti.jpeg";
+import Speaker13 from "../../assets/images/speakers/Manish_Nair.jpeg";
 
 export default function Speakers() {
   const speakers = [
@@ -74,6 +78,30 @@ export default function Speakers() {
       role: "Director @G H Raisoni College of Engineering, Nagpur",
       image: Speaker9,
       linkedin: "https://www.linkedin.com/in/sachin-untawale-17504274/",
+    },
+    {
+      name: "Ramakrishnan R",
+      role: "Co-founder @ImmverseAI",
+      image: Speaker10,
+      linkedin: "https://www.linkedin.com/in/rama-immverse/",
+    },
+    {
+      name: "Amit Kale",
+      role: "Associate Vice President, Engineering @GlobalLogic",
+      image: Speaker11,
+      linkedin: "https://www.linkedin.com/in/amitakale/",
+    },
+    {
+      name: "Dr. Vivek Nanoti",
+      role: "Director Engineering , LTJSS @Priyadarshini Group of Institutions",
+      image: Speaker12,
+      linkedin: "https://www.linkedin.com/in/dr-vivek-nanoti-52483762//",
+    },
+    {
+      name: "Maneesh Diwakaran Nair",
+      role: "Employability & Resume Trainer",
+      image: Speaker13,
+      linkedin: "https://www.linkedin.com/in/maneesh-diwakaran-nair-05251525/",
     },
   ];
 
