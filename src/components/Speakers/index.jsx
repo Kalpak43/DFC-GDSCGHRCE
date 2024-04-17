@@ -55,12 +55,12 @@ export default function Speakers() {
       image: Speaker5,
       linkedin: "https://www.linkedin.com/in/the-shivamjoshi/",
     },
-    // {
-    //   name: "Vishnu Pillai",
-    //   role: "Devops Engineer @Capegemini",
-    //   image: Speaker6,
-    //   linkedin: "https://www.linkedin.com/in/vishnu-pillai-797a67172/",
-    // },
+    {
+      name: "Vishnu Pillai",
+      role: "Devops Engineer @Capegemini",
+      image: Speaker6,
+      linkedin: "https://www.linkedin.com/in/vishnu-pillai-797a67172/",
+    },
     {
       name: "Ashutosh Shivhare",
       role: "Director @Data U Technologies",
