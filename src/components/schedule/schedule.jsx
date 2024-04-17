@@ -94,7 +94,7 @@ export default function Schedule() {
 
                   <div className="flex-auto">
                     <h1 className="text-base">09:30 a.m. – 10:30 a.m</h1>
-                    <h1 className="text-xl font-[500]">
+                    <h1 className="text-xl font-[500] capitalize">
                       Registration and Kickoff
                     </h1>
                   </div>
@@ -107,7 +107,7 @@ export default function Schedule() {
 
                   <div className="flex-auto">
                     <h1 className="text-bases">10:30 a.m. – 10:40 a.m</h1>
-                    <h1 className="text-xl font-[500]">Inauguration</h1>
+                    <h1 className="text-xl font-[500] capitalize">Inauguration</h1>
                   </div>
                   <div></div>
                 </div>
@@ -119,7 +119,7 @@ export default function Schedule() {
 
                   <div className="flex-auto">
                     <h1 className="text-base">10:40 a.m. – 11:00 a.m</h1>
-                    <h1 className="text-xl font-[500]">
+                    <h1 className="text-xl font-[500] capitalize">
                       Guest Welcome / Lightning of Lamp
                     </h1>
                   </div>
@@ -133,7 +133,7 @@ export default function Schedule() {
 
                   <div className="flex-auto">
                     <h1 className="text-base">11:00 a.m. – 11:30 a.m</h1>
-                    <h1 className="text-xl font-[500]">
+                    <h1 className="text-xl font-[500] capitalize">
                       Keynote 1: Role of AI to bridge industry academia gap
                     </h1>
                   </div>
@@ -147,7 +147,7 @@ export default function Schedule() {
 
                   <div className="flex-auto">
                     <h1 className="text-base">11:30 a.m. – 12:00 p.m</h1>
-                    <h1 className="text-xl font-[500]">
+                    <h1 className="text-xl font-[500] capitalize">
                       Keynote 2: Cyber Security
                     </h1>
                   </div>
@@ -161,7 +161,7 @@ export default function Schedule() {
 
                   <div className="flex-auto">
                     <h1 className="text-base">12:00 p.m. – 12:30 p.m</h1>
-                    <h1 className="text-xl font-[500]">Keynote 3</h1>
+                    <h1 className="text-xl font-[500] capitalize">Keynote 3</h1>
                   </div>
                   <div></div>
                 </div>
@@ -173,7 +173,7 @@ export default function Schedule() {
 
                   <div className="flex-auto">
                     <h1 className="text-base">12:30 p.m. – 1:15 p.m</h1>
-                    <h1 className="text-xl font-[500]">
+                    <h1 className="text-xl font-[500] capitalize">
                       Panel Discussion 1: Generative AI in Industry And academic
                       research
                     </h1>
@@ -188,7 +188,7 @@ export default function Schedule() {
 
                   <div className="flex-auto">
                     <h1 className="text-base">01:15 p.m. – 02:00 p.m</h1>
-                    <h1 className="text-xl font-[500]">Networking Lunch</h1>
+                    <h1 className="text-xl font-[500] capitalize">Networking Lunch</h1>
                   </div>
                   <div></div>
                 </div>
@@ -200,7 +200,7 @@ export default function Schedule() {
 
                   <div className="flex-auto">
                     <h1 className="text-base">02:00 p.m. – 02:30 p.m</h1>
-                    <h1 className="text-xl font-[500]">
+                    <h1 className="text-xl font-[500] capitalize">
                       Technical Treasure Hunt / Jamming Session
                     </h1>
                   </div>
@@ -214,7 +214,7 @@ export default function Schedule() {
 
                   <div className="flex-auto">
                     <h1 className="text-base">02:30 p.m. – 03:00 p.m</h1>
-                    <h1 className="text-xl font-[500]">
+                    <h1 className="text-xl font-[500] capitalize">
                       Speaker Session 3: Impact of salesforce on process
                       automation
                     </h1>
@@ -229,7 +229,7 @@ export default function Schedule() {
 
                   <div className="flex-auto">
                     <h1 className="text-base">03:00 p.m. – 03:30 p.m</h1>
-                    <h1 className="text-xl font-[500]">
+                    <h1 className="text-xl font-[500] capitalize">
                       Career Grooming/ Resume Building
                     </h1>
                   </div>
@@ -243,7 +243,7 @@ export default function Schedule() {
 
                   <div className="flex-auto">
                     <h1 className="text-base">03:30 p.m. – 04:00 p.m</h1>
-                    <h1 className="text-xl font-[500]">Speaker Session 4</h1>
+                    <h1 className="text-xl font-[500] capitalize">Speaker Session 4</h1>
                   </div>
                   <div></div>
                 </div>
@@ -255,7 +255,7 @@ export default function Schedule() {
 
                   <div className="flex-auto">
                     <h1 className="text-base">04:00 p.m. – 04:30 p.m</h1>
-                    <h1 className="text-xl font-[500]">Speaker Session 5</h1>
+                    <h1 className="text-xl font-[500] capitalize">Speaker Session 5</h1>
                   </div>
                   <div></div>
                 </div>
@@ -267,7 +267,7 @@ export default function Schedule() {
 
                   <div className="flex-auto">
                     <h1 className="text-base">04:30 p.m. – 05:00 p.m</h1>
-                    <h1 className="text-xl font-[500]">
+                    <h1 className="text-xl font-[500] capitalize">
                       Panel Discussion 2: Current IT market Scenario and Job
                       Readiness to technocrats
                     </h1>
@@ -281,7 +281,7 @@ export default function Schedule() {
 
                   <div className="flex-auto">
                     <h1 className="text-base">05:00 p.m. – 06:00 p.m</h1>
-                    <h1 className="text-xl font-[500]">
+                    <h1 className="text-xl font-[500] capitalize">
                       Valedictory
                     </h1>
                   </div>
