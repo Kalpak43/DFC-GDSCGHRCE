@@ -77,6 +77,7 @@ export default function Hero() {
         </button>
       </div>
       <p className="my-2 text-[var(--google-green)] text-center">(Accomodation will be provided on paid Basis.)</p>
+      <p className="my-2 text-[var(--google-green)] text-center">(Registration amount is Non-refundable.)</p>
 
       <Modal
         open={open}
