@@ -27,7 +27,7 @@ export default function Speakers() {
   const speakers = [
     {
       name: "Dr. Rizwan Ahmed",
-      role: "Division Head-Digital Innovation @delaPlex",
+      role: "CTO @delaPlex",
       image: Speaker1,
       linkedin: "https://www.linkedin.com/in/dr-rizwanahmed/",
     },
