@@ -84,32 +84,34 @@ export default function Speakers() {
       role: "Director @G H Raisoni College of Engineering, Nagpur",
       image: Speaker9,
       linkedin: "https://www.linkedin.com/in/sachin-untawale-17504274/",
-    },{
+    },
+    {
       name: "Amit Kale",
       role: "Associate Vice President @GlobalLogic ",
-      image:  Speaker13,
+      image: Speaker13,
       linkedin: "https://www.linkedin.com/in/amitakale/",
     },
     {
       name: "Arvind Kumar",
       role: "Center Head @TCS",
-      image:  Speaker11,
+      image: Speaker11,
       linkedin: "https://www.linkedin.com/in/arvind-kumar-2556716/",
     },
     {
       name: "Ramakrishna R",
       role: "Co-Founder and CEO @ImmverseAI",
-      image:  Speaker12,
+      image: Speaker12,
       linkedin: "https://www.linkedin.com/in/rama-immverse/",
-    },{
+    },
+    {
       name: "Maneesh Nair",
       role: "Employability and Resume Trainer",
-      image:  Speaker10,
+      image: Speaker10,
       linkedin: "https://www.linkedin.com/in/maneesh-diwakaran-nair-05251525/",
     },
   ];
 
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, axis: "y" }, [
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, axis: "x" }, [
     Autoplay(),
   ]);
   const [prevBtnEnabled, setPrevBtnEnabled] = React.useState(false);
@@ -146,18 +148,20 @@ export default function Speakers() {
         </h1>
         <div className="flex text-2xl">
           <button onClick={scrollPrev}>
-            <IoIosArrowDropupCircle />
+            <IoIosArrowDropleft />
           </button>
           <button onClick={scrollNext}>
-            <IoIosArrowDropdownCircle />
+            <IoIosArrowDropright />
           </button>
         </div>
       </div>
 
       <div className="embla h-full w-full" ref={emblaRef}>
-        <div className="embla__container__vertical h-full w-full">
+        <div className="embla__container h-full w-full">
           {speakers.map((speaker, index) => (
-            <Card key={index} {...speaker} />
+            <div key={index} className="embla__slide p-4">
+              <Card {...speaker} />
+            </div>
           ))}
         </div>
       </div>
