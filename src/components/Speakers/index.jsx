@@ -30,42 +30,50 @@ export default function Speakers() {
       role: "CTO @delaPlex",
       image: Speaker1,
       linkedin: "https://www.linkedin.com/in/dr-rizwanahmed/",
+      title: "",
     },
     {
       name: "Shirkant Ardhapurkar",
       role: "Founder @Crypto Forensic Technology",
       image: Speaker2,
       linkedin: "https://www.linkedin.com/in/shrikant-ardhapurkar/",
+      title: "",
     },
     {
       name: "Dr. Akshay Zadgaonkar",
       role: "Co-Founder @BabyVerse",
       image: Speaker3,
       linkedin: "https://www.linkedin.com/in/akshayz/",
+      title: "",
     },
     {
       name: "Aniruddha Kalbande",
       role: "Founder & CEO of Fireblaze AI School",
       image: Speaker4,
       linkedin: "https://www.linkedin.com/in/aniruddhakalbande/",
+      title: "",
     },
     {
       name: "Shivam Joshi",
       role: "Founder @Codon's Ltd.",
       image: Speaker5,
       linkedin: "https://www.linkedin.com/in/the-shivamjoshi/",
+      title:
+        "Shivam Joshi, the dynamic Founder and Executive Director of Codon's Technologies Ltd. Renowned as India's youngest corporate trainer for AI, Shivam initiated his entrepreneurial journey at the age of 18. With a profound expertise in AI/ML, data science, and data analysis, he has provided corporate training to industry giants such as LTI, JP morgan ,CITI, Principal Global, etc. Shivam's international presence is equally impressive; he represented India as a delegate at the ESA Expo Dubai and the IYSA Indonesia. He is also a core member of IEEE Rising Star Las Vegas. Let's welcome Shivam Joshi with a round of applause.",
     },
     {
       name: "Vishnu Pillai",
       role: "Devops Engineer @Capegemini",
       image: Speaker6,
       linkedin: "https://www.linkedin.com/in/vishnu-pillai-797a67172/",
+      title: ""
     },
     {
       name: "Ashutosh Shivhare",
       role: "Director @Data U Technologies",
       image: Speaker7,
       linkedin: "https://www.linkedin.com/in/ashutoshshivhare/",
+      title: "",
     },
     // {
     //   name: "Aakash Singh",
@@ -78,42 +86,48 @@ export default function Speakers() {
       role: "Marketing Director @mindZcloud Technologies",
       image: Speaker8,
       linkedin: "https://www.linkedin.com/in/aakash-singh-58479b96/",
+      title: "",
     },
     {
       name: "Dr. Sachin Untawale",
       role: "Director @G H Raisoni College of Engineering, Nagpur",
       image: Speaker9,
       linkedin: "https://www.linkedin.com/in/sachin-untawale-17504274/",
+      title: "",
     },
     {
       name: "Amit Kale",
       role: "Associate Vice President @GlobalLogic ",
       image: Speaker13,
       linkedin: "https://www.linkedin.com/in/amitakale/",
+      title: "",
     },
     {
       name: "Arvind Kumar",
       role: "Center Head @TCS",
       image: Speaker11,
       linkedin: "https://www.linkedin.com/in/arvind-kumar-2556716/",
+      title: "",
     },
     {
       name: "Ramakrishna R",
       role: "Co-Founder and CEO @ImmverseAI",
       image: Speaker12,
       linkedin: "https://www.linkedin.com/in/rama-immverse/",
+      title: "",
     },
     {
       name: "Maneesh Nair",
       role: "Employability and Resume Trainer",
       image: Speaker10,
       linkedin: "https://www.linkedin.com/in/maneesh-diwakaran-nair-05251525/",
+      title: "",
     },
   ];
 
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, axis: "x" }, [
     Autoplay(),
-  ]);
+  ], {pauseOnHover: true});
   const [prevBtnEnabled, setPrevBtnEnabled] = React.useState(false);
   const [nextBtnEnabled, setNextBtnEnabled] = React.useState(false);
 
