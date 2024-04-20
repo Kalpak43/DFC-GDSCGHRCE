@@ -35,7 +35,7 @@ export default function NewPage() {
       { i: "d", x: 0, y: 4, w: 2, h: 4 },
       { i: "f", x: 0, y: 0, w: 2, h: 6 },
       { i: "g", x: 0, y: 2, w: 2, h: 7 },
-      { i: "h", x: 0, y: 7, w: 2, h: 5 },
+      { i: "h", x: 0, y: 7, w: 2, h: 7 },
       { i: "i", x: 0, y: 8, w: 2, h: 5 },
       { i: "j", x: 0, y: 9, w: 2, h: 4 },
     ],
