@@ -76,7 +76,7 @@ export default function Schedule() {
     {
       time: "11:00 a.m. – 11:30 a.m",
       event: "Keynote 1: Role of AI to bridge industry academia gap",
-      speakers: [],
+      speakers: [["Mr. Arvind Kumar",arvind]],
     },
     {
       time: "11:30 a.m. – 12:00 p.m",
