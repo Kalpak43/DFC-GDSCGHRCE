@@ -9,12 +9,12 @@ import ShriArdha from "../../assets/images/speakers/Shrikant_Ardhapurkar.jpeg";
 import AksZad from "../../assets/images/speakers/Dr_Akshay_Zadgaonkar.jpeg";
 import AniKal from "../../assets/images/speakers/Aniruddha_Kalbande.jpeg";
 import ShivJo from "../../assets/images/speakers/Shivam_Joshi.jpeg";
-import vishnuPillai from "../../assets/images/speakers/Vishnu_Pillai.jpeg";
+import vishnuPillai from "../../assets/images/speakers/Vishnu_Pillai.png";
 import ashutoshShivhare from "../../assets/images/speakers/Ashutosh_Shivhare.jpeg";
 import akashS from "../../assets/images/speakers/akashS.jpg";
 import sachinUntawale from "../../assets/images/speakers/Sachin_Untawale.jpeg";
-import maneeshNair from "../../assets/images/speakers/maneesh.jpg";
-import arvind from "../../assets/images/speakers/arvind.jpg";
+import maneeshNair from "../../assets/images/speakers/maneesh.png";
+import arvind from "../../assets/images/speakers/arvind.png";
 import ramaR from "../../assets/images/speakers/RamaR.jpg";
 import amitKale from "../../assets/images/speakers/AmitKale.jpg";
 

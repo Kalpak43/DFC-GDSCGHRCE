@@ -14,12 +14,12 @@ import Speaker2 from "../../assets/images/speakers/Shrikant_Ardhapurkar.jpeg";
 import Speaker3 from "../../assets/images/speakers/Dr_Akshay_Zadgaonkar.jpeg";
 import Speaker4 from "../../assets/images/speakers/Aniruddha_Kalbande.jpeg";
 import Speaker5 from "../../assets/images/speakers/Shivam_Joshi.jpeg";
-import Speaker6 from "../../assets/images/speakers/Vishnu_Pillai.jpeg";
+import Speaker6 from "../../assets/images/speakers/Vishnu_Pillai.png";
 import Speaker7 from "../../assets/images/speakers/Ashutosh_Shivhare.jpeg";
 import Speaker8 from "../../assets/images/speakers/akashS.jpg";
 import Speaker9 from "../../assets/images/speakers/Sachin_Untawale.jpeg";
-import Speaker10 from "../../assets/images/speakers/maneesh.jpg";
-import Speaker11 from "../../assets/images/speakers/arvind.jpg";
+import Speaker10 from "../../assets/images/speakers/maneesh.png";
+import Speaker11 from "../../assets/images/speakers/arvind.png";
 import Speaker12 from "../../assets/images/speakers/RamaR.jpg";
 import Speaker13 from "../../assets/images/speakers/AmitKale.jpg";
 
